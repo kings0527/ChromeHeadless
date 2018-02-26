@@ -14,6 +14,7 @@ const beginUrl = argv.url || 'http://facebook.com';
 
   page = await browser.newPage();
 
+  // WTF! needs to check this parameter seriously!
   // page.waitFor(0.001); //wait for the seconds to timeout ????
 
   await page.goto(beginUrl);
