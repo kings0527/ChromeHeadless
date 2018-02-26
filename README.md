@@ -46,13 +46,17 @@ npm install puppeteer
 
 # Get screenshots, HTML source and redirections.
 
+one command line for all, paralleled version is under construction :star:
+
 ```
 nodejs pup_run.js --url=http://facebook.com
 ```
 
 # Test and Samples:
 
-Time for get all on facebook page: 1.7s
+Time for get all on facebook page: 1.7s.
+It captures the redirection from http to https.
+
 ```
 time nodejs pup_run.js --url=http://facebook.com
 [1] Redirection: from url:<http://facebook.com> to <https://www.facebook.com/>
@@ -65,7 +69,7 @@ nodejs pup_run.js --url=http://facebook.com  1.00s user 0.18s system 65% cpu 1.7
 
 The screenshot:
 
-<img src="https://github.com/ririhedou/ChromeHeadless/blob/master/fb_test.png" width="800" height="200" />
+<img src="https://github.com/ririhedou/ChromeHeadless/blob/master/fb_test.png" width="800" height="400" />
 
 
 
@@ -82,3 +86,7 @@ How to build a :shipit:distributed:shipit: system:
 - ChromeLess [LINK](https://github.com/graphcool/chromeless)
 - Brozzler [LINK](https://github.com/internetarchive/brozzler)
 
+
+# TODO
+
+More code is on the way
