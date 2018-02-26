@@ -2,6 +2,10 @@
 
 Command line for get HTMLs
 
+# Install
+
+Install chrome and check whether it is stable:
+
 ```
 #install chrome debian
 sudo apt-get update
@@ -16,12 +20,45 @@ google-chrome --headless --disable-gpu —-timeout=300 --enable-logging --v=1  \
 --screenshot --window-size=1280,1696  http://facebook.com
 ```
 
-
 Run headless chrome at background
 
 ```
 google-chrome --headless --hide-scrollbars --remote-debugging-port=9222 --disable-gpu &
 ```
+
+Install npm depedences
+```
+npm -v
+5.3.0
+
+nodejs -v
+v8.5.0
+
+npm install puppeteer
+```
+
+# Get screenshots, HTML source and redirections.
+
+```
+nodejs pup_run.js --url=http://facebook.com
+```
+
+# Test and Samples:
+
+Time for get all on facebook page: 1.7s
+```
+time nodejs pup_run.js --url=http://facebook.com
+[1] Redirection: from url:<http://facebook.com> to <https://www.facebook.com/>
+[2] HTML was succesfully saved.
+[3] Screen was saved.
+
+nodejs pup_run.js --url=http://facebook.com  1.00s user 0.18s system 65% cpu 1.796 total
+
+```
+
+The screenshot:
+
+
 
 
 # Tutorials
