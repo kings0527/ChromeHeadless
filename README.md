@@ -1,6 +1,6 @@
 # ChromeHeadless
 
-Command line for get HTMLs
+A lightweight built-in for website profiling.
 
 ## Install
 
