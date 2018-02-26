@@ -14,16 +14,23 @@ sudo apt-get install google-chrome-stable
 # get your chrome version
 apt list --installed | grep chrome
 
-#my version is that google-chrome-stable/now 62.0.3202.89-1 amd64 [installed,upgradable to: 64.0.3282.186-1]
+#my version is that google-chrome-stable/now 62.0.3202.89-1 amd64
+\ [installed,upgradable to: 64.0.3282.186-1]
 
+```
+
+Run headless chrome to get screenshot amd dump html page.
+
+```
+//take screen
 google-chrome --headless --disable-gpu —-timeout=300 --enable-logging --v=1  \
 --screenshot --window-size=1280,1696  http://facebook.com
-```
 
-Run headless chrome at background
+//dump source
+chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 
-```
 google-chrome --headless --hide-scrollbars --remote-debugging-port=9222 --disable-gpu &
+
 ```
 
 Install npm depedences
@@ -58,6 +65,7 @@ nodejs pup_run.js --url=http://facebook.com  1.00s user 0.18s system 65% cpu 1.7
 
 The screenshot:
 
+<img src="https://github.com/ririhedou/ChromeHeadless/blob/master/fb_test.png" width="200" height="200" />
 
 
 
