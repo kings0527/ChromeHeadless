@@ -74,7 +74,7 @@ time nodejs pup_run.js --url=http://facebook.com
 nodejs pup_run.js --url=http://facebook.com  0.96s user 0.18s system 64% cpu 1.756 total
 ```
 
-- The screenshot: <img src="https://github.com/ririhedou/ChromeHeadless/blob/master/facebook.com.screen.png" width="800" height="400" />
+- The screenshot: <img src="https://github.com/ririhedou/ChromeHeadless/blob/master/fb/facebook.com.screen.png" width="800" height="400" />
 
 
 - The redirection chain:
@@ -83,7 +83,7 @@ nodejs pup_run.js --url=http://facebook.com  0.96s user 0.18s system 64% cpu 1.7
 <http://facebook.com> -> <https://www.facebook.com/>
 ```
 
-- The html source: [TEXT](https://github.com/ririhedou/ChromeHeadless/blob/master/facebook.com.source.txt)
+- The html source: [TEXT](https://github.com/ririhedou/ChromeHeadless/blob/master/fb/facebook.com.source.txt)
 
 
 ## Tutorials (I read)
