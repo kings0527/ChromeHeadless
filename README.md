@@ -73,7 +73,7 @@ The screenshot:
 
 
 
-# Tutorials
+# Tutorials (I read)
 
 Usage:
 
