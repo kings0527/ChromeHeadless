@@ -2,7 +2,7 @@
 
 Command line for get HTMLs
 
-# Install
+## Install
 
 Install chrome and check whether it is stable:
 
@@ -11,7 +11,7 @@ Install chrome and check whether it is stable:
 sudo apt-get update
 sudo apt-get install google-chrome-stable
 
-# get your chrome version
+### get your chrome version
 apt list --installed | grep chrome
 
 #my version is that google-chrome-stable/now 62.0.3202.89-1 amd64
@@ -33,7 +33,7 @@ google-chrome --headless --hide-scrollbars --remote-debugging-port=9222 --disabl
 
 ```
 
-Install npm depedences
+Install npm dependence
 ```
 npm -v
 5.3.0
@@ -44,17 +44,21 @@ v8.5.0
 npm install puppeteer
 ```
 
-# Get screenshots, HTML source and redirections.
+## Get screenshots, HTML source and redirections.
 
 one command line for all, paralleled version is under construction :star:
+
+the url is parsed as the parameter.
 
 ```
 nodejs pup_run.js --url=http://facebook.com
 ```
 
-# Test and Samples:
+
+## Test and Samples:
 
 Time for get all on facebook page: 1.7s.
+
 It captures the redirection from http to https.
 
 ```
@@ -67,21 +71,19 @@ nodejs pup_run.js --url=http://facebook.com  1.00s user 0.18s system 65% cpu 1.7
 
 ```
 
-The screenshot:
-
-<img src="https://github.com/ririhedou/ChromeHeadless/blob/master/fb_test.png" width="800" height="400" />
+- The screenshot: <img src="https://github.com/ririhedou/ChromeHeadless/blob/master/fb_test.png" width="800" height="400" />
 
 
-The redirection chain:
+- The redirection chain:
 
 ```
 <http://facebook.com> -> <https://www.facebook.com/>
 ```
 
-The html source: [TEXT](https://raw.githubusercontent.com/ririhedou/ChromeHeadless/master/mynewfile.txt)
+- The html source: [TEXT](https://raw.githubusercontent.com/ririhedou/ChromeHeadless/master/mynewfile.txt)
 
 
-# Tutorials (I read)
+## Tutorials (I read)
 
 Usage:
 
@@ -95,6 +97,6 @@ How to build a :shipit:distributed:shipit: system:
 - Brozzler [LINK](https://github.com/internetarchive/brozzler)
 
 
-# TODO
+## TODO
 
 More code is on the way
