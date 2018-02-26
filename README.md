@@ -92,7 +92,7 @@ Usage:
 
 - use headless chrome to profile website. [LINK](https://medium.com/@e_mad_ehsan/getting-started-with-puppeteer-and-chrome-headless-for-web-scrapping-6bf5979dee3e)
 - scrapy with Puppeteer [LINK](https://codeburst.io/a-guide-to-automating-scraping-the-web-with-javascript-chrome-puppeteer-node-js-b18efb9e9921)
-
+- Puppeteer API reference [LINK](https://github.com/GoogleChrome/puppeteer/blob/v0.10.2/docs/api.md#pageclose)
 
 How to build a :shipit:distributed:shipit: system:
 
