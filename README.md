@@ -39,7 +39,7 @@ google-chrome --headless --hide-scrollbars --remote-debugging-port=9222 --disabl
 Install npm dependence
 ```
 npm -v
-5.3.0
+5.6.0
 
 nodejs -v
 v8.5.0
@@ -67,11 +67,11 @@ It captures the redirection from http to https.
 ```
 time nodejs pup_run.js --url=http://facebook.com
 [1] Redirection: from url:<http://facebook.com> to <https://www.facebook.com/>
-[2] HTML was succesfully saved.
+[1] Redirection Chain was successfully saved.
+[2] HTML was successfully saved.
 [3] Screen was saved.
 
-nodejs pup_run.js --url=http://facebook.com  1.00s user 0.18s system 65% cpu 1.796 total
-
+nodejs pup_run.js --url=http://facebook.com  0.96s user 0.18s system 64% cpu 1.756 total
 ```
 
 - The screenshot: <img src="https://github.com/ririhedou/ChromeHeadless/blob/master/fb_test.png" width="800" height="400" />
