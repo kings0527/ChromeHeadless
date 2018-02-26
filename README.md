@@ -65,7 +65,7 @@ nodejs pup_run.js --url=http://facebook.com  1.00s user 0.18s system 65% cpu 1.7
 
 The screenshot:
 
-<img src="https://github.com/ririhedou/ChromeHeadless/blob/master/fb_test.png" width="200" height="200" />
+<img src="https://github.com/ririhedou/ChromeHeadless/blob/master/fb_test.png" width="800" height="200" />
 
 
 
