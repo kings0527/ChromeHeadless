@@ -19,15 +19,18 @@ apt list --installed | grep chrome
 
 ```
 
-Run headless chrome to get screenshot amd dump html page.
+Directly run headless chrome to get screenshot and dump html page, in separate steps
 
 ```
 //take screen
 google-chrome --headless --disable-gpu —-timeout=300 --enable-logging --v=1  \
 --screenshot --window-size=1280,1696  http://facebook.com
 
+//PS: --enable-logging --v=1 will log all the intermediate data, you have to parse the log date to get the final URL.
+
 //dump source
-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
+google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
+
 
 google-chrome --headless --hide-scrollbars --remote-debugging-port=9222 --disable-gpu &
 
