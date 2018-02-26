@@ -1,0 +1,4 @@
+
+# ignore node
+node_modules/**
+.idea/**
