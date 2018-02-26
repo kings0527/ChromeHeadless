@@ -72,6 +72,14 @@ The screenshot:
 <img src="https://github.com/ririhedou/ChromeHeadless/blob/master/fb_test.png" width="800" height="400" />
 
 
+The redirection chain:
+
+```
+<http://facebook.com> -> <https://www.facebook.com/>
+```
+
+The html source: [TEXT](https://raw.githubusercontent.com/ririhedou/ChromeHeadless/master/mynewfile.txt)
+
 
 # Tutorials (I read)
 
