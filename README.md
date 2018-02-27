@@ -1,6 +1,6 @@
 # ChromeHeadless
 
-<p align="center">
+<p align="left">
 <img src="https://img.shields.io/circleci/project/github/badges/shields.svg" alt="build status">
 <img src="https://img.shields.io/readthedocs/pip.svg" alt="doc on">
 </p>
