@@ -40,7 +40,7 @@ google-chrome --headless --hide-scrollbars --remote-debugging-port=9222 --disabl
 
 ```
 
-Install npm dependence
+Or install npm dependence to have more functionalities:
 ```
 npm -v
 5.6.0
@@ -49,13 +49,14 @@ nodejs -v
 v8.5.0
 
 npm install puppeteer
+// google provided library
 ```
 
 ## Get screenshots, HTML source and redirections.
 
-one command line for all, paralleled version is under construction :star:
+One command line for all, paralleled version is under construction :star:
 
-the url is parsed as the parameter.
+The url is parsed into the parameter.
 
 ```
 nodejs pup_run.js --url=http://facebook.com
