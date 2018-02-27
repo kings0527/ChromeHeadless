@@ -1,8 +1,9 @@
 # ChromeHeadless
 
+<p align="center">
 <img src="https://img.shields.io/circleci/project/github/badges/shields.svg" alt="build status">
 <img src="https://img.shields.io/readthedocs/pip.svg" alt="doc on">
-
+</p>
 A lightweight built-in for website profiling.
 
 ## Install
