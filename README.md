@@ -1,9 +1,6 @@
 # ChromeHeadless
 
-<a href="https://circleci.com/gh/badges/shields/tree/master">
-        <img src="https://img.shields.io/circleci/project/github/badges/shields.svg"
-            alt="build status"></a>
-
+<img src="https://img.shields.io/circleci/project/github/badges/shields.svg" alt="build status">
 <img src="https://img.shields.io/readthedocs/pip.svg" alt="doc on">
 
 A lightweight built-in for website profiling.
