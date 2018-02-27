@@ -1,7 +1,7 @@
 # ChromeHeadless
 
 <p align="left">
-[![Build Status](https://ci.pytorch.org/jenkins/job/pytorch-builds/job/pytorch-win-ws2016-cuda9-cudnn7-py3-trigger/badge/icon)]
+<img src-"https://ci.pytorch.org/jenkins/job/pytorch-builds/job/pytorch-win-ws2016-cuda9-cudnn7-py3-trigger/badge/icon" alt="building">
 <img src="https://img.shields.io/readthedocs/pip.svg" alt="doc on">
 </p>
 A lightweight built-in for website profiling.
