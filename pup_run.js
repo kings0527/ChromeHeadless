@@ -5,53 +5,65 @@ const fs = require('fs');
 const puppeteer = require('puppeteer');
 var argv = require('minimist')(process.argv.slice(2));
 
-const beginUrl = argv.url || 'http://facebook.com';
-const beginFile = argv.file || 'default.txt' ;
+const beginUrl = argv.url;
+const beginFile = argv.file;
 const globalDir = argv.dir || './'
 
 //terminate the process in case some weird things happen
 process.on('unhandledRejection', up => { throw up })
+
+
 
 /*
 * run for only 1 url at each time
 */
 async function run_single(myUrl){
 
-  const browser = await puppeteer.launch();
-  var page = null;
+    const browser = await puppeteer.launch();
+    var page = null;
 
-  page = await browser.newPage();
+    page = await browser.newPage();
 
-  // WTF! needs to check this parameter seriously!
-  // page.waitFor(0.001); //wait for the seconds to timeout ????
-  var arrayOfStrings = String(myUrl).split('/');
-  let name = arrayOfStrings[arrayOfStrings.length-1];
+    page = await browser.newPage();
 
-  await page.goto(myUrl);
+    var arrayOfStrings = String(myUrl).split('/');
+    let name = globalDir + arrayOfStrings[arrayOfStrings.length-1];
 
-  const url = await page.url();
+    try
+    {
+        await page.goto(myUrl,  { timeout: 5000 }); //5000 is 5000ms
 
-  console.log('[1] Redirection: from url:<' + beginUrl + '> to <' + url + '>');
+        const url = await page.url();
 
-  var directionChain = 'Redirection: from url:<' + beginUrl + '> to <' + url + '>';
+        console.log('[1] Redirection: from url:<' + myUrl + '> to <' + url + '>');
 
-  fs.writeFile(name + '.redirect', directionChain, (err) => {
-        if (err) throw err;
-        console.log('[1] Redirection Chain was successfully saved.');
-    });
+        var directionChain = 'Redirection: from url:<' + myUrl + '> to <' + url + '>';
 
-  let HTML = await page.evaluate(() => document.documentElement.outerHTML);
+        fs.writeFile(name + '.redirect', directionChain, (err) => {
+            if (err) throw err;
+            console.log('[1] Redirection Chain was successfully saved.');
+        });
 
-    var filepath = name + '.source.txt';
-    fs.writeFile(filepath, HTML, (err) => {
-        if (err) throw err;
-        console.log('[2] HTML was successfully saved.');
-    });
+        let HTML = await page.content(); //content is enough for the HTML content
 
-  await page.setViewport({width: 1600, height: 800});
-  await page.screenshot({path: name + '.screen.png'});
-  console.log('[3] Screen was saved.');
-  await browser.close();
+        var filepath = name + '.source.txt';
+        fs.writeFile(filepath, HTML, (err) => {
+            if (err) throw err;
+            console.log('[2] HTML was successfully saved.');
+        });
+
+        await page.setViewport({width: 1600, height: 800});
+        await page.screenshot({path: name + '.screen.png'});
+
+        console.log('[3] Screen was saved.');
+        await page.close();
+    }
+    catch (e)
+        {
+          console.log('Cannot go to for ' + myUrl + ', stop the browser...');
+        }
+
+    await browser.close();
 
 };
 
@@ -76,12 +88,16 @@ async function run_multiple_urls(urlList){
 
     page = await browser.newPage();
 
-
-    await page.waitFor(5); //wait for the seconds to timeout ????
     var arrayOfStrings = String(myUrl).split('/');
     let name = globalDir + arrayOfStrings[arrayOfStrings.length-1];
 
-    await page.goto(myUrl);
+    try
+        { await page.goto(myUrl,  { timeout: 5000 });} //5000 is 5000ms
+    catch (e)
+        {
+          console.log('Cannot go to for ' + myUrl + ', continue...');
+          continue;
+        }
 
     const url = await page.url();
 
@@ -113,6 +129,20 @@ async function run_multiple_urls(urlList){
 
 };
 
+
+if (beginUrl){
+
+    console.log('Run single file......');
+    run_single(beginUrl);
+}
+
+if (beginFile)
+{
+    var dp = require('./data_process');
+    dp.readSqautting(beginFile);
+}
+
+
 //run_single(beginUrl);
-urlList = ['http://facebook.com', 'http://google.com'];
-run_multiple_urls(urlList);
+//var urlList = ['http://facebook.com', 'http://google.com', 'http://googggg.vvv'];
+//run_multiple_urls(urlList);
