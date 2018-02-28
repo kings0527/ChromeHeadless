@@ -2,3 +2,6 @@
 # ignore node
 node_modules/**
 .idea/**
+
+# ignore test
+test/**
