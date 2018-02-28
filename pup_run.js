@@ -22,16 +22,14 @@ async function run_single(myUrl){
 
     page = await browser.newPage();
 
-    page = await browser.newPage();
-
     var arrayOfStrings = String(myUrl).split('/');
+
     let name = globalDir + arrayOfStrings[arrayOfStrings.length-1];
+    console.log(name);
 
     try
     {
         await page.goto(myUrl,  { timeout: 5000 }); //5000 is 5000ms
-
-        await page.waitForNavigation();
 
         const url = await page.url();
 
@@ -72,13 +70,11 @@ async function run_single(myUrl){
 */
 async function run_multiple_urls(urlList){
 
-  urlList.sort();
-
-  const browser = await puppeteer.launch();
-
   var page = null;
 
+  const browser = await puppeteer.launch();
   var arrayLength = urlList.length;
+
   for (var i = 0; i < arrayLength; i++) {
 
     //the i-th element
@@ -86,11 +82,12 @@ async function run_multiple_urls(urlList){
 
     console.log(String(i) +'-th: ' + myUrl);
 
+    page = await browser.newPage();
     try {
-            page = await browser.newPage();
 
             var arrayOfStrings = String(myUrl).split('/');
             let name = globalDir + arrayOfStrings[arrayOfStrings.length-1];
+
             await page.goto(myUrl,  { timeout: 5000 }); //5000 is 5000ms
 
             //await page.waitForNavigation();
@@ -101,7 +98,7 @@ async function run_multiple_urls(urlList){
 
             var directionChain = 'Redirection: from url:<' + myUrl + '> to <' + url + '>';
 
-            fs.writeFile(name + '.redirect', directionChain, (err) => {
+            await fs.writeFile(name + '.redirect', directionChain, (err) => {
                 if (err) throw err;
                 console.log('[1] Redirection Chain was successfully saved.');
             });
@@ -109,7 +106,7 @@ async function run_multiple_urls(urlList){
             let HTML = await page.content(); //content is enough for the HTML content
 
             var filepath = name + '.source.txt';
-            fs.writeFile(filepath, HTML, (err) => {
+            await fs.writeFile(filepath, HTML, (err) => {
                 if (err) throw err;
                 console.log('[2] HTML was successfully saved.');
             });
@@ -118,13 +115,15 @@ async function run_multiple_urls(urlList){
             await page.screenshot({path: name + '.screen.png'});
 
             console.log('[3] Screen was saved.');
-            await page.close();
+
         }
     catch (e)
         {
+          console.log(e);
           console.log('Cannot go to for ' + myUrl + ', continue...');
           continue;
         }
+        await page.close();
 
   }
   await browser.close();
@@ -132,14 +131,7 @@ async function run_multiple_urls(urlList){
 };
 
 
-if (beginUrl){
-
-    console.log('Run single file......');
-    run_single(beginUrl);
-}
-
-
-if (beginFile)
+async function run_file_in_separate_fashion(beginFile)
 {
     var dp = require('./data_process');
     var domain_structure_list = dp.readSquatting(beginFile);
@@ -152,10 +144,31 @@ if (beginFile)
             urlList.push(domain_structure_list[i].url);
     }
 
-    console.log(urlList.length);
-    run_multiple_urls(urlList);
+    urlList.sort();
+
+    console.log('Total length:' + String(urlList.length));
+
+    var length = urlList.length;
+    var interval = 100;
+    for (var i = 0; i < length; i = i+interval)
+    {
+        var subArray = urlList.slice(i,i+interval)
+        await run_multiple_urls(subArray);
+    }
+
 }
 
+
+if (beginUrl){
+    console.log('Run single file......');
+    run_single(beginUrl);
+}
+
+
+if (beginFile)
+{
+    run_file_in_separate_fashion(beginFile);
+}
 
 //run_single(beginUrl);
 //var urlList = ['http://facebook.com', 'http://google.com', 'http://googggg.vvv'];

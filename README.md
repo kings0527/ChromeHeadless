@@ -66,6 +66,8 @@ nodejs pup_run.js --url=http://facebook.com
 
 ## Test and Samples:
 
+### Single case test
+
 Time for get all on facebook page: 1.7s.
 
 It captures the redirection from http to https.
@@ -91,9 +93,12 @@ nodejs pup_run.js --url=http://facebook.com  0.96s user 0.18s system 64% cpu 1.7
 
 - The html source: [TEXT](https://github.com/ririhedou/ChromeHeadless/blob/master/fb/facebook.com.source.txt)
 
-## Performance
+### A large scale test
 
 For 225 test urls, the total time consumption is 335 seconds (1.5s/per url).
+
+For 3165 test urls, the total time consumption is 763.21s user 130.13s system 17% cpu 1:27:09.00 total (1.65s/per url).
+
 
 
 ## Tutorials (I read)
@@ -110,6 +115,8 @@ How to build a :shipit:distributed:shipit: system:
 - Brozzler [LINK](https://github.com/internetarchive/brozzler)
 
 
-## TODO
+## Problems
 
+- What is there are too many renders? (pkill chrome)
+-
 More code is on the way

@@ -3,5 +3,10 @@
 node_modules/**
 .idea/**
 
+
 # ignore test
+fbtest/**
 test/**
+
+#ignore logs
+*.log
