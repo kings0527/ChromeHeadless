@@ -3,7 +3,7 @@
 
 module.exports =
 {
-    readSqautting : readSqautting
+    readSquatting : readSquatting
 }
 
 //Define a struture that contains the domain, squat_from, type
@@ -12,14 +12,13 @@ const Item = Struct('suspicious_domain', 'squat_from', 'type', 'url')
 
 const fs = require('fs');
 
-function readSqautting(filename)
+function readSquatting(filename)
 {
     var lines = fs.readFileSync(filename, 'utf-8').split('\n').filter(Boolean);
     var domain_structure_arr = new Array();
 
     for (var i in lines)
         {
-
           //console.log(lines[i].length);
           var arr = lines[i].split(",");
 

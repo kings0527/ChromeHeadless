@@ -12,8 +12,6 @@ const globalDir = argv.dir || './'
 //terminate the process in case some weird things happen
 process.on('unhandledRejection', up => { throw up })
 
-
-
 /*
 * run for only 1 url at each time
 */
@@ -88,8 +86,7 @@ async function run_multiple_urls(urlList){
 
     console.log(String(i) +'-th: ' + myUrl);
 
-    try
-        {
+    try {
             page = await browser.newPage();
 
             var arrayOfStrings = String(myUrl).split('/');
@@ -130,7 +127,6 @@ async function run_multiple_urls(urlList){
         }
 
   }
-
   await browser.close();
 
 };
@@ -142,15 +138,15 @@ if (beginUrl){
     run_single(beginUrl);
 }
 
+
 if (beginFile)
 {
     var dp = require('./data_process');
-    var domain_structure_list = dp.readSqautting(beginFile);
+    var domain_structure_list = dp.readSquatting(beginFile);
     var urlList = new Array();
     for (i in domain_structure_list)
     {
         //console.log(i, domain_structure_list[i].url);
-
         //we only monitor non-duplicate cases
         if (urlList.indexOf(domain_structure_list[i].url)==-1)
             urlList.push(domain_structure_list[i].url);
@@ -158,7 +154,6 @@ if (beginFile)
 
     console.log(urlList.length);
     run_multiple_urls(urlList);
-
 }
 
 
@@ -168,4 +163,3 @@ if (beginFile)
 //Commands:
 //nodejs pup_run.js --file=/home/ketian/Desktop/squatting_domains/domain_collect/_home_datashare_dns_history_20170906_4chan.org.out --dir=test/  | wc -l
 //nodejs pup_run.js --file=/home/ketian/Desktop/squatting_domains/domain_collect/_home_datashare_dns_history_20170906_4chan.org.out --dir=test/  | tee 4chan.log
-
