@@ -1,0 +1,40 @@
+<html data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKX74ixpzVyXbJprcLfbH4psP4+L2entqri0lzh6pkAaXLPIcclv6DQBeJJjGFWrBIF6QMyFwXT5CCRyjS2penECAwEAAQ==_QrOCcausSkWTaF/cBJMfOitlknMTVXYUnAVrQ97+LP0+hrop46uJb4wDCEoQrmEGyAFcVt7kFyE9r/8EigMRmA=="><head>
+				  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+				  <meta name="viewport" content="width=device-width"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"><script type="text/javascript">
+	<!--
+	dimensionUpdated = 0;
+	function applyFrameKiller()
+	{
+		if(window.top != self)
+		{
+			cHeight = 0;
+			if( typeof( window.innerHeight ) != 'undefined' ) {
+			//Non-IE
+			cHeight = window.innerHeight;
+			dimensionUpdated = 1;
+			} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight )  ) {
+			//IE 6+ in 'standards compliant mode'
+			cHeight = document.documentElement.clientHeight;
+			dimensionUpdated = 1;
+			} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+			//IE 4 compatible
+			cHeight = document.body.clientHeight;
+			dimensionUpdated = 1;
+			}
+			if( cHeight <= 250 && dimensionUpdated == 1)
+			{
+				window.top.location = "http://4chsn.org/?fp=PZZ%2BUfWCY6S7iohRGBNOFgZBtdgiqCESoaWL5j%2BTnbN7FfGIpo2cHYklM6vdvicK2xfHASzNUSvHo7x8bEiXRg%3D%3D&prvtof=zy8RM2bKQdmfZqRyZjDD7GOkB%2Fxk4wiCfpPz4ZdfhdM%3D&poru=hROYAKHdFx6jtTrURGtrm2tzKfAhv%2B32OQlxogXHv2fsFhbloKzT0NWF66HlmB3J&cifr=1&";
+			}
+		}
+	}
+
+	applyFrameKiller();
+	// -->
+</script><script type="text/javascript">try{document.cookie = 'fjccheck=1';}catch(exception){}</script></head><frameset rows="100%,*" frameborder="no" border="0" framespacing="0">
+	<frame src="http://4chsn.org/?fp=PZZ%2BUfWCY6S7iohRGBNOFgZBtdgiqCESoaWL5j%2BTnbN7FfGIpo2cHYklM6vdvicK2xfHASzNUSvHo7x8bEiXRg%3D%3D&amp;prvtof=SB2RjzTlW5YXmKemdjmCwKtf3raINnwuzxtaHt3UO6Q%3D&amp;poru=4t40zBxsT8cAOh0DCQjauFbB7zX2kLRyv8NACGm13FutM%2FjKQjkwKOxz3SwugSow&amp;">
+</frameset>
+<noframes>
+	<body bgcolor="#ffffff" text="#000000">
+	<a href="http://4chsn.org/?fp=PZZ%2BUfWCY6S7iohRGBNOFgZBtdgiqCESoaWL5j%2BTnbN7FfGIpo2cHYklM6vdvicK2xfHASzNUSvHo7x8bEiXRg%3D%3D&prvtof=wcd8VGsUqvwxFCdPIC%2BESlrukYE%2FJD9PsbdU4zuGxd4%3D&poru=23CuXp9%2BTGsYgCo%2B38KZbauvclcLLtiOEHaWsZ%2FrmulpuV3W0oHnLX7GHwuz6MFa&">Click here to proceed</a>.
+	</body>
+</noframes></html>

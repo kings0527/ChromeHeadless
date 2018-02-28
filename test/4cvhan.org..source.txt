@@ -1,0 +1,140 @@
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Page Loading...</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="refresh" content="1;url=http://293160872.lga1.ampverified.com/re?click_id=1519782538010200004&amp;script_disabled=true">
+
+  <script type="text/javascript">
+
+  function screenSizeParameters() { 
+    if (window.screen !== undefined) { 
+      return '&m_width=' + window.screen.width + '&m_height=' + window.screen.height; 
+    } else if (window.java !== undefined) { 
+      var oScreen = ava.awt.Toolkit.getDefaultToolkit().getScreenSize().screen; 
+      return '&m_width=' + oScreen.width + '&m_height=' + oScreen.height; 
+    } else { 
+      return '&m_width=&m_height='; 
+    }
+  };
+
+  function docSizeParameters() { 
+    var doc = window.document; 
+    if (typeof window.innerWidth === 'number') { 
+      return '&b_width=' + window.innerWidth + '&b_height=' + window.innerHeight;
+    } else if (doc.documentElement !== undefined && doc.documentElement.clientWidth !== undefined && doc.documentElement.clientWidth !== 0) { 
+      return '&b_width=' + doc.documentElement.clientWidth + '&b_height=' + doc.documentElement.clientHeight; 
+    } else if (doc.body !== undefined && doc.body.clientWidth !== undefined) { 
+      return '&b_width=' + doc.body.clientWidth + '&b_height=' + doc.body.clientHeight; 
+    } else {
+      return '&b_width=&b_height=';
+    }
+  };
+
+  function winPositionParameters() { 
+    if (typeof window.screenLeft === 'number') { 
+      return '&b_top=' + window.screenTop + '&b_left=' + window.screenLeft; 
+    } else if (window.screenX !== undefined) { 
+      return '&b_top=' + window.screenY + '&b_left=' + window.screenX; 
+    } else { 
+      return '&b_top=&b_left=';
+    }
+  };
+
+  function isInIframeParameters() { 
+    var isInIframe = '0'; 
+    if(window.top !== window.self) { 
+      isInIframe = '1'; 
+    }
+    return '&in_iframe=' + isInIframe
+  };
+
+
+  function createCookie(name, value, days) {
+    var date, expires;
+    if (days) {
+      date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      expires = "";
+      expires = "+date.toGMTString()";
+    } else {
+      expires = "";
+    }
+    document.cookie = name+"="+value+expires+"; path=/";
+  };
+
+  function readCookie(name) {
+    var nameEQ = name + "=", ca = document.cookie.split(';'), i, c;
+    for(i=0;i < ca.length;i++) {
+      c = ca[i]; while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0)
+        return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+  };
+
+  function eraseCookie(name) {
+    createCookie(name,"",-1);
+  };
+
+//  var handler = function() {
+//	  var redirectLinkElement,
+//	  url = "http://293160872.lga1.ampverified.com/re?click_id=1519782538010200004" + screenSizeParameters() + docSizeParameters() + winPositionParameters() + isInIframeParameters();
+//    if (/MSIE (\d+\.\d+);/.test(navigator.userAgent) && document.getElementById && document.getElementById('redirect').click) {
+//      redirectLinkElement= document.getElementById('redirect');
+//			redirectLinkElement.href = url;
+//			redirectLinkElement.click();
+//	  } else if (window.location && typeof window.location.replace === 'function'){
+//		  window.location.replace(url);
+//	  } else {
+//		  window.location = url;
+//	  }
+//  };
+
+
+  var handler = function() {
+    var redirectLinkElement;
+    var url = "http://293160872.lga1.ampverified.com/re?click_id=1519782538010200004" + screenSizeParameters() + docSizeParameters() + winPositionParameters() + isInIframeParameters();
+    var referrerUrl = "http://4cvhan.org./jr.php?gz=zowHT7XIf934AG%2F39sxv9QSXwo%2Fthx6DK3rfSqDDFwsNmDx%2BRd%2B%2BP%2BHmbz2%2BfOpIyRbj9Pg%2BCj1Tn3KC%2BPY08oIfck6aHNy3xKvBjSHUV1PArXQBzmtNwWqQyvaArWjtGxz4%2BRCp%2FzqVzkgiPz4%2BQqfWkyipWCBBUTdHzPaSYyUtKxNTAD8x%2FXTnt1QAwhNY6o0QrfKgEK4ukOX9MWh%2B%2B596htsz943N9wwFHI9grV39M9wh0b8QR1Swr3XEGaRT5ap8J9E4qxoH7DuSp7BPNNC2YO3%2BccdNYBZzW3uPg2D1gJgDEFpJvcfjHtN1Bdcc5KfZfvAxqN6D40fRb%2B7HwV618ETw5OeTSkHUVQMAp8IVjP6aPcoEf7rb6TVfJzNWF6yiNAu6eauIVzOPI3ZHPvc%2FTa0MqGUdpFW%2B%2FCefuCkleCxryN8XiWJ2ICCk4rT0TpiQ9SDkjKDY%2Fse8mDPN1zFHACXaGLDELCBBuKcCgRnXCnZKWusnVrSsfakWp5j9Xa7uWnE5v7ZyPT%2B6lBgPlpptf5VET9H%2FksEEFXaonoM6zOQrFuYux%2BqUsEExue%2BYe00BYQhFCziu%2BlzRZSl4KLH2coJUlhpVSI%2BOwey0KQw4leqO8DOVYz0RZBdMS4Zd1DBWEsoUcLM%3D&vs=800:600&ds=800:600&sl=0:0&os=f&nos=f";
+    var windowName = window.name;
+    var cookieName = "last_cookie";
+    if (/MSIE (\d+\.\d+);/.test(navigator.userAgent) && document.getElementById && document.getElementById('redirect').click) {  // IE
+      if(referrerUrl !== '' && (windowName === 'ampclick_blank' || windowName === 'ampclick_self')){// back button click
+        window.name = 'ampclick_none';
+       if(windowName === 'ampclick_self') {   // same window
+          window.location.replace(referrerUrl);
+        }else{// new window
+          window.location.replace(referrerUrl);   // no back history send it back to referrer
+        }
+      } else {   // normal click
+        if(window.name !== '' && window.name !== 'ampclick_none') {   // has window name set
+          if(readCookie(cookieName)) {   // cookie exists
+             eraseCookie(cookieName);
+             referrerUrl !== '' ? window.location.replace(referrerUrl) : window.history.back();
+             return;
+         } else {
+            createCookie(cookieName, clickId);
+         }
+     } else {
+        window.name = window.history.length === 0 ? 'ampclick_blank' : 'ampclick_self';
+     }
+      redirectLinkElement= document.getElementById('redirect');
+			redirectLinkElement.href = url;
+			redirectLinkElement.click();
+    }
+	  } else if (window.location && typeof window.location.replace === 'function'){
+		  window.location.replace(url);
+	  } else {
+		  window.location = url;
+	  }
+  };
+  window.addEventListener ?
+  window.addEventListener("load", handler, false) :
+  window.attachEvent && window.attachEvent("onload", handler)
+  </script>
+</head>
+<body>
+  <div style="height:300px"><a href="http://293160872.lga1.ampverified.com/re?click_id=1519782538010200004" id="redirect" style="color: #FFFFFF">click here!</a></div>
+
+
+</body></html>

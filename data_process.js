@@ -18,7 +18,9 @@ function readSqautting(filename)
     var domain_structure_arr = new Array();
 
     for (var i in lines)
-        { console.log(lines[i].length);
+        {
+
+          //console.log(lines[i].length);
           var arr = lines[i].split(",");
 
           //do some data cleaning
@@ -30,11 +32,11 @@ function readSqautting(filename)
 
           domain_structure_arr.push(Item(String(arr[1]), arr[0], arr[3], url));
         }
-
+    /*
     for (var j in domain_structure_arr)
     {
        console.log(domain_structure_arr[j]);
-    }
+    }*/
 
     return domain_structure_arr;
 };

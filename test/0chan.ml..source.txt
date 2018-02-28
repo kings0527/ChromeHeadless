@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"><html lang="ru"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Исходочан</title>
+<meta name="author" content="Анонимус">
+<meta name="description" content="Простой оверчан имиджборд. А так же путеводитель и энциклопедия.">
+<meta name="keywords" content="исходочан, исходчан, аутчан, аутух, ауталик, оверчан, imageboard, overchan, борды, имиджборды, двач, 2ch, нульчан, нульч, говнульч, овернульч, цп, чан, анонимный">
+<link rel="icon" type="image/svg+xml" href="icon/favicon.svg">
+<link rel="icon" type="image/png" href="icon/favicon.png">
+<link type="text/css" rel="stylesheet" id="theme" href="css/theme7.css">
+<style>
+#ifr {position: absolute;top:0px;z-index: 2;}
+.menu {position: absolute;top:0px;left:0px;width:256px;z-index: 3;}
+.imageboards {left:256px;width:86.6%;}
+
+input[type=checkbox] {top:0px;right:0px;display: none;}
+ 
+.label_index {padding: 5px;color: #fff;font-weight: bold;font: 35px "arial";
+position:absolute;top:-8px;left:210px;z-index: 4;cursor:pointer;
+}
+ 
+input[type=checkbox]:checked ~ .menu {width:0px;}
+input[type=checkbox]:checked ~ .imageboards {left:0px;width:100%;}
+input[type=checkbox]:checked ~ .label_index  {left:0px;}
+
+::scrollbar{width:0px;}
+::-webkit-scrollbar{width:0px;}
+::-moz-scrollbar {width: 0px;}
+
+summary::-webkit-details-marker {display: none}
+summary:after {content: "	 ";float: left;}
+details[open] summary:after {content: "";}
+details, details:focus, summary, summary:focus {outline: 0;}
+
+a:hover {opacity: 0.7;}
+</style>
+
+<link id="dyncss" rel="stylesheet" type="text/css" href=""> 
+  <script type="text/javascript"> 
+  function setDynCSS(url) { 
+  if (!arguments.length) { 
+  url = (url = document.cookie.match(/\bdyncss=([^;]*)/)) && url[1]; 
+  if (!url) return ''; 
+  } 
+  document.getElementById('dyncss').href = url; 
+  var d = new Date(); 
+  d.setFullYear(d.getFullYear() + 1); 
+  document.cookie = ['dyncss=', url, ';expires=', d.toGMTString(), ';path=/;'].join(''); 
+  return url; 
+  } 
+  setDynCSS(); 
+  </script>
+
+  
+<script type="text/javascript"> 
+if (screen.width <= 480) {
+window.location = "mobi.html";
+}
+if (screen.width <= 667) {
+window.location = "mobi.html";
+}
+if (screen.width <= 736) {
+window.location = "mobi.html";
+}
+</script>
+</head>	
+<body>
+<script>
+window.onload=function() {
+document.getElementById("ifr").style.height=window.innerHeight+"px";
+}
+</script>
+
+
+<input type="checkbox" id="toggle" class="hiddenmenu">
+<label for="toggle" title="Закрыть/Открыть боковое меню" class="label_index"><a>≡</a></label>
+
+<iframe class="menu" src="./list.html" name="list" noresize="" scrolling="auto" width="100%" height="100%" style="display: block" frameborder="no">  </iframe>
+<iframe class="imageboards" seamless="" id="ifr" src="./body.html" name="board" width="100%" height="100%" frameborder="no" style="display: block; height: 600px;"></iframe>
+
+<script>
+(function(b) {
+var e = document.querySelectorAll("." + b),
+a = localStorage.getItem(b),
+a = (a = JSON.parse(a)) || (a = {}, localStorage.setItem(b, JSON.stringify(a)));
+[].forEach.call(e, function(c, d) {
+void 0 !== a[d] && (c.checked = a[d]);
+c.addEventListener("change", function() {
+a[d] = c.checked;
+localStorage.setItem(b, JSON.stringify(a))
+})
+})
+})("hiddenmenu");
+</script>
+
+
+
+</body></html>

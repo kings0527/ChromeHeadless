@@ -1,0 +1,99 @@
+<html><head><title>4cham.net</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+.leftmenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #FFFFEE;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	padding: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 15%;
+	color: #800000;
+}
+.rightbody {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #800000;
+	background-color: #FFFFEE;
+	padding: 20px;
+}
+table#news {
+    width: 100%;
+}
+td#headline {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bolder;
+	color: #800000;
+	padding: 5px;
+	border-bottom: 1px #000000 solid;
+}
+td#newsbody {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	border-bottom: 1px #000000 solid;
+	padding-left: 30px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-bottom: 20px;
+}
+-->
+</style></head>
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
+<table width="100%" height="100%">
+    <tbody><tr>
+        <td class="leftmenu" valign="top">
+ <p>Sections</p>
+
+            <p>
+		<a href="http://img.4cham.net/a/">/a/ - Audio</a><br><br>
+		<a href="http://img.4cham.net/b/">/b/ - Random</a><br><br>
+		<a href="http://img.4cham.net/c/">/c/ - Chikins</a><br><br>
+		<a href="http://img.4cham.net/d/">/d/ - Deranged</a><br><br>
+		<a href="http://img.4cham.net/p/">/p/ - Personal</a><br><br>
+		<a href="http://img.4cham.net/s/">/s/ - Squids</a><br><br>
+		<a href="http://img.4cham.net/w/">/w/ - Wombats</a><br><br>
+            </p>
+        </td>
+        <td class="rightbody" valign="top">
+            <center>
+                <p><font size="+7"><em><strong>4cham</strong><br>
+
+                <font size="+1">"wombat what?"<br>
+                    </font></em></font></p></center><font size="+7"><font size="-1">
+			Welcome to 4cham.net, my file repository! There are no disclaimers here - the net is for browsing! Browse!
+		</font></font><center>                <p><strong><em><font size="+2"><u>NEWS</u></font></em></strong></p>
+
+            </center>
+            <!-- Begin news post copy/paste block -->
+
+<table id="news">
+			    <tbody><tr>
+				    <td id="headline">Welcome by <a href="mailto:chamelaeon@chamelaeon.com">Chamelaeon</a> - 1/30/04</td>
+                </tr>
+				<tr>
+				<td id="newsbody">
+	Lo! I am the Cham that cometh on high, and this is a file repository that I registered and set up because truly, there are fiends chasing my brain like the Hounds of Tindalos, and one of them is named Calculus.	I blame him for all of this.<br>
+<br>
+Anyways, there's not much here now, but I expect the Stuff I accumulate over time will wend its way here eventually. There's a couple things in <a href="http://img.4cham.net/s/">/s/</a> and a couple in <a href="http://img.4cham.net/b/">/b/</a>. Have fun with all that.<br>
+<br>
+- Chamelaeon
+				</td>
+                </tr>
+			</tbody></table>
+			<br>
+
+            <!-- End news post copy/paste block -->
+	    </td>
+    </tr>
+</tbody></table>
+
+</body></html>

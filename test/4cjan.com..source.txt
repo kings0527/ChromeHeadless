@@ -1,0 +1,38 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title id="titletext">建设中</title>
+</head>
+
+<body bgcolor="white">
+<table>
+<tbody><tr>
+<td id="tableProps" width="70" valign="top" align="center">
+<img id="pagerrorImg" src="pagerror.gif" width="36" height="48">
+</td><td id="tablePropsWidth" width="400">
+
+<h1 id="errortype" style="font:14pt/16pt 宋体, verdana; color:#4e4e4e">
+<p id="Comment1"><!--Problem--></p><p id="errorText">建设中</p></h1>
+
+<p id="Comment2"><!--Probable causes:<--></p><p id="errordesc"><font style="font:9pt/12pt 宋体; color:black">
+  您想要查看的站点当前没有默认页。可能正在对它进行升级和配置操作。
+</font></p><p id="term1"><font style="font:9pt/12pt 宋体; color:black">请稍后再访问此站点。如果您仍然遇到问题，请与网站的管理员联系。
+
+</font></p><hr size="1" color="blue"><font style="font:9pt/12pt 宋体; color:black">
+
+<p id="message1">如果您是网站的管理员，并且认为您是由于错误才收到此消息，请参阅 IIS 帮助中的"启用和禁用动态内容"。
+
+</p><h5 id="head1">要访问 IIS 帮助</h5>
+<ol>
+<li id="bullet1">单击<b>开始</b>，然后单击<b>运行</b>。
+</li><li id="bullet2">在<b>打开</b>文本框中，键入 <b>inetmgr</b>。将出现 IIS 管理器。
+</li><li id="bullet3">从<b>帮助</b>菜单，单击<b>帮助主题</b>。
+</li><li id="bullet4">单击<b>Internet 信息服务</b>。</li></ol>
+</font></td>
+</tr>
+</tbody></table>
+
+
+
+</body></html>

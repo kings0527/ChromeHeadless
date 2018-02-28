@@ -1,0 +1,40 @@
+<html data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKX74ixpzVyXbJprcLfbH4psP4+L2entqri0lzh6pkAaXLPIcclv6DQBeJJjGFWrBIF6QMyFwXT5CCRyjS2penECAwEAAQ==_bopM9QJ3EIY8e6pvCyFj/k/7mPpLT/gZZi3PpKxwpCB0P3TNPynwpOpkA0L2DB9x+f5zqGqRULwR5QH/YMa37A=="><head>
+				  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+				  <meta name="viewport" content="width=device-width"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"><script type="text/javascript">
+	<!--
+	dimensionUpdated = 0;
+	function applyFrameKiller()
+	{
+		if(window.top != self)
+		{
+			cHeight = 0;
+			if( typeof( window.innerHeight ) != 'undefined' ) {
+			//Non-IE
+			cHeight = window.innerHeight;
+			dimensionUpdated = 1;
+			} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight )  ) {
+			//IE 6+ in 'standards compliant mode'
+			cHeight = document.documentElement.clientHeight;
+			dimensionUpdated = 1;
+			} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+			//IE 4 compatible
+			cHeight = document.body.clientHeight;
+			dimensionUpdated = 1;
+			}
+			if( cHeight <= 250 && dimensionUpdated == 1)
+			{
+				window.top.location = "http://4chin.org/?fp=wtk5a08C7bKHnFntxiJszupQtbk7iK1rwKuNXUkVTXKOlq1KFIuiMog5Za%2FlSn1vQHbVccppD0LVe6EPFymwrg%3D%3D&prvtof=wcuD4cZxEAd27xn5vyLEERGNQeJcSIrmvr5KnFwPW8w%3D&poru=0dL3dJvUsTLhZSlPBz1p3oKnJrPxjFzujBG4ggxCTy3kmGHtIiM%2BKZz%2FRtxO%2Ft8b&cifr=1&";
+			}
+		}
+	}
+
+	applyFrameKiller();
+	// -->
+</script><script type="text/javascript">try{document.cookie = 'fjccheck=1';}catch(exception){}</script></head><frameset rows="100%,*" frameborder="no" border="0" framespacing="0">
+	<frame src="http://4chin.org/?fp=wtk5a08C7bKHnFntxiJszupQtbk7iK1rwKuNXUkVTXKOlq1KFIuiMog5Za%2FlSn1vQHbVccppD0LVe6EPFymwrg%3D%3D&amp;prvtof=B049dSgWEw7dFvSnvBHuIyGO24o4ADdCPcoIlUXuYzI%3D&amp;poru=nEM4jSwNy6%2FfMgie8GRTkYGw7MeWoRCh%2By8pT3YoUlu9fVvDp50GFKlrITdQwCQq&amp;">
+</frameset>
+<noframes>
+	<body bgcolor="#ffffff" text="#000000">
+	<a href="http://4chin.org/?fp=wtk5a08C7bKHnFntxiJszupQtbk7iK1rwKuNXUkVTXKOlq1KFIuiMog5Za%2FlSn1vQHbVccppD0LVe6EPFymwrg%3D%3D&prvtof=FivBfC2YpkBBo0tfPiwvC7L99y226VD%2F45XE0sfqmLo%3D&poru=7mUBAaI1fb9tC65llL1MmUQfmXrbAbDbRZHLg2QsUIcj1VaIe3D4HC4p2TVy%2B2C3&">Click here to proceed</a>.
+	</body>
+</noframes></html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chan</title>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://profile.chan.tech/css/app.css" rel="stylesheet" type="text/css">
+<link href="https://profile.chan.tech/css/custom.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+            var initAnimate = true;
+            var animate = false;
+            var ms = 700;
+            function doAnimate(i){
+                if(!animate) {
+                    animate = true;
+                    $('.content.transform').css("margin-top", "8px");
+                    $('.main .content').fadeOut(ms);
+                    setTimeout(function () {
+                        $('.main .content#content-' + i).fadeIn(ms);
+
+                        if(initAnimate){
+                            ms = 400;
+                            initAnimate = false;
+                        }
+                        setTimeout(function(){
+                            animate = false;
+                        }, ms);
+                    }, ms+100);
+                }
+            }
+            $(document).ready(function(){
+                var links = $(".links span").click(function(){
+                    var index = $(".links span").index(this);
+                    doAnimate(index+1);
+                });
+                var winHeight = $(window).height();
+                $(".content.transform").css("margin-top", winHeight/2 - 200 + "px");
+                setTimeout(function(){
+                    $(".content.transform").removeClass('transform-slow');
+                }, 1100);
+            });
+        </script>
+</head>
+<body>
+<div class="content transform transform-slow" style="margin-top: 100px;">
+<div class="title m-b-md">
+Chan
+</div>
+<div class="links">
+<span>About Me</span>
+<span>Resume</span>
+<span>Contact Me</span>
+</div>
+<div class="main">
+<div id="content-1" class="content" style="display:none">
+<div class="row">
+<div class="panel panel-default col-md-6 col-md-offset-3" style="border:none;box-shadow:none;">
+<div class="panel-body">
+<div class="col-md-3 col-offset-2">
+<img circular="" src="res/img/icon/ic_me.jpg">
+</div>
+<div class="col-md-7">
+<h2>Chan Wai Yin</h2>
+<h4>Web Developer</h4>
+<h4>Freelancer</h4>
+<p>&nbsp;</p>
+<div>Microsoft Azure Cloud Service Certified</div>
+<div>Student Member of The Hong Kong Institution of Engineers</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="content" style="display:none">
+<div class="row edu">
+<h3>Education Background</h3>
+<div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_speed.jpg">
+</div>
+</div>
+<div class="panel-body text">
+<div class="col-md-9">
+<span class="award">BSc(Hons)</span>&nbsp;
+in Applied Sciences (Information Systems and Web Technologies)
+</div>
+<div class="col-md-3">2015-2017</div>
+ </div>
+</div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_ive.png">
+</div>
+</div>
+<div class="panel-body text">
+<div class="col-md-9">
+<span class="award">Higher Diploma</span>&nbsp;
+in Software Engineering - Institute of Vocation Education (Tsing Yi)
+</div>
+<div class="col-md-3">2013-2015</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row single">
+<h3>Working Experience</h3>
+<div class="panel panel-default col-md-8 col-md-offset-2" style="">
+<div class="panel-body" style="text-align: left">
+<div class="col-md-1 icon">
+<img src="res/img/icon/ic_varian.png" style="width:100%">
+</div>
+<div class="col-md-8">
+<span class="award">Information Systems Internship</span>&nbsp;
+<div>Varian Medical System Pacific Inc.</div>
+</div>
+<div class="col-md-3" style="text-align: right">Oct 2016 - Current</div>
+</div>
+<div class="panel-body" style="text-align: left">
+<div class="col-md-1 icon">
+<img src="res/img/icon/ic_itforce.png" style="width:100%">
+</div>
+<div class="col-md-8">
+<span class="award">Web Specialist</span>&nbsp;
+<div>IT Force (Hong Kong) Limited</div>
+</div>
+<div class="col-md-3" style="text-align: right">May 2015 - Jul 2015</div>
+</div>
+<div class="panel-body" style="text-align: left">
+<div class="col-md-1 icon">
+<img src="https://pbs.twimg.com/profile_images/709852306632744960/zQ0xyGGK.jpg" style="width:100%">
+</div>
+<div class="col-md-8">
+<span class="award">Industrial Attachment - Information Technology</span>&nbsp;
+<div>Microsoft Hong Kong</div>
+</div>
+<div class="col-md-3" style="text-align: right">Jul 2014 - Aug 2014</div>
+</div>
+<div class="panel-body" style="text-align: left">
+<div class="col-md-1 icon">
+<img src="res/img/icon/ic_0101.png" style="width:100%">
+</div>
+<div class="col-md-8">
+<span class="award">Office Assistant</span>&nbsp;
+<div>0101HOST Limited</div>
+</div>
+<div class="col-md-3" style="text-align: right">May 2012 - Sep 2014</div>
+</div>
+</div>
+</div>
+<div class="row single">
+<h3>Qaulification Award</h3>
+<div class="panel panel-default col-md-8 col-md-offset-2" style="">
+<div class="panel-body" style="text-align: left">
+<div class="col-md-9">
+<div>Microsoft Azure203x: Microsoft Azure Virtual Networks</div>
+</div>
+<div class="col-md-3" style="text-align: right">Mar 2017</div>
+</div>
+<div class="panel-body" style="text-align: left">
+<div class="col-md-9">
+<div>Microsoft AZURE207x: Databases in Azure</div>
+</div>
+<div class="col-md-3" style="text-align: right">Feb 2017</div>
+</div>
+<div class="panel-body" style="text-align: left">
+<div class="col-md-9">
+<div>Microsoft AZURE205x: Microsoft Azure Storage</div>
+</div>
+<div class="col-md-3" style="text-align: right">Feb 2017</div>
+</div>
+<div class="panel-body" style="text-align: left">
+<div class="col-md-9">
+<div>Microsoft AZURE214x: Azure Fundamentals</div>
+</div>
+<div class="col-md-3" style="text-align: right">Feb 2017</div>
+</div>
+</div>
+</div>
+<div class="row edu">
+<h3>Competition Award</h3>
+<div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_iet.png">
+</div>
+</div>
+<div class="panel-body text">
+<div class="col-md-9">
+<span class="award">Sub-degree and Overall Champion</span>&nbsp;
+- IET Young Professionals Exhibition &amp; Competition
+</div>
+<div class="col-md-3">July 2015</div>
+</div>
+</div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_expo.png">
+</div>
+</div>
+<div class="panel-body text">
+<div class="col-md-9">
+<span class="award">Outstanding Project Award</span>&nbsp;
+- IVE IT Discipline Career and Project Exhibition
+</div>
+<div class="col-md-3">May 2015</div>
+</div>
+</div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_cc.jpg">
+</div>
+</div>
+<div class="panel-body text">
+<div class="col-md-9">
+<span class="award">Merit Award</span>&nbsp;
+- Hong Kong University Students Extra-curriculum Technology Contest
+</div>
+<div class="col-md-3">June 2015</div>
+</div>
+</div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_worldskills.png">
+</div>
+</div>
+<div class="panel-body text">
+<div class="col-md-9">
+<span class="award">Winner</span>&nbsp;
+- IT Software Solutions for Business trade of WorldSkills Hong Kong Competition
+</div>
+<div class="col-md-3">June 2014</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row edu">
+<h3>Previous Work</h3>
+<div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_aa.png">
+</div>
+</div>
+<div class="panel-body text">
+<span class="award">Archive Profile</span>&nbsp;
+- Personal Freelance
+</div>
+</div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_elsa.jpg">
+</div>
+</div>
+<div class="panel-body text">
+<span class="award">E-learning Administration System</span>&nbsp;
+- Personal Freelance
+</div>
+</div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_vehicle.png">
+</div>
+</div>
+<div class="panel-body text">
+<span class="award">Vehicle Repairing Management System</span>&nbsp;
+- Personal Freelance
+</div>
+</div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+ <img style="width:100%" src="res/img/banner/bn_facetter.jpg">
+</div>
+</div>
+<div class="panel-body text">
+<span class="award">Social Networking Site</span>&nbsp;
+- Website Development Project
+</div>
+</div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_jed.png">
+</div>
+</div>
+<div class="panel-body text">
+<span class="award">Arithmetic Game</span>&nbsp;
+- Website Development Project
+</div>
+</div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_fyp.png">
+</div>
+</div>
+<div class="panel-body text">
+<span class="award">Intelligent E-Ticket Issuance System</span>&nbsp;
+- Higher Diploma Final Year Project
+</div>
+</div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_pizza.jpg">
+</div>
+</div>
+<div class="panel-body text">
+<span class="award">Online Pizza Ordering System</span>&nbsp;
+- Website Development Project
+</div>
+</div>
+<div class="panel panel-default col-md-3 col-md-offset-3" style="padding:0">
+<div class="panel-body" style="padding: 0">
+<div>
+<img style="width:100%" src="res/img/banner/bn_sdp.png">
+</div>
+</div>
+<div class="panel-body text">
+<span class="award">Supermarket Maintenance System</span>&nbsp;
+- Software Development Project
+</div>
+</div>
+</div>
+</div>
+<div class="row single">
+<h3>Scholarships</h3>
+<div class="panel panel-default col-md-8 col-md-offset-2" style="">
+<div class="panel-body" style="text-align: left">
+<div class="col-md-9">
+<span class="award">Talent Development Scholarship</span>&nbsp;
+<div>Self-Financing Post-Secondary Scholarship Scheme</div>
+</div>
+<div class="col-md-3" style="text-align: right">Apr 2016</div>
+</div>
+<div class="panel-body" style="text-align: left">
+<div class="col-md-9">
+<span class="award">Talent Development Scholarship</span>&nbsp;
+<div>Hong Kong Special Administrative Region Government Scholarship Fund</div>
+</div>
+<div class="col-md-3" style="text-align: right">June 2015</div>
+</div>
+<div class="panel-body" style="text-align: left">
+<div class="col-md-9">
+<span class="award">Outstanding Performance Scholarship</span>&nbsp;
+<div>Hong Kong Special Administrative Region Government Scholarship Fund</div>
+</div>
+<div class="col-md-3" style="text-align: right">Apr 2015</div>
+</div>
+<div class="panel-body" style="text-align: left">
+<div class="col-md-9">
+<span class="award">Outstanding Performance Scholarship</span>&nbsp;
+<div>Hong Kong Special Administrative Region Government Scholarship Fund</div>
+</div>
+<div class="col-md-3" style="text-align: right">Apr 2014</div>
+</div>
+</div>
+</div>
+<h3>Professional Skills</h3>
+<div class="row single">
+<div class="panel panel-default col-md-12">
+<div class="panel-body two-col">
+<div class="skill-set">
+<div class="col-md-1 icon"><img src="res/img/icon/ic_html5.png"></div>
+<div class="col-md-3" style="margin:5px 0;text">HTML5</div>
+</div>
+<div class="skill-set">
+<div class="col-md-1 icon"><img src="res/img/icon/ic_css3.png"></div>
+<div class="col-md-3" style="margin:5px 0;text">CSS3</div>
+</div>
+<div class="skill-set">
+<div class="col-md-1 icon"><img src="res/img/icon/ic_js.png"></div>
+<div class="col-md-3" style="margin:5px 0;text">JavaScripts</div>
+</div>
+<div class="skill-set">
+<div class="col-md-1 icon"><img src="res/img/icon/ic_jquery.gif"></div>
+<div class="col-md-3" style="margin:5px 0;text">jQuery</div>
+</div>
+<div class="skill-set">
+<div class="col-md-1 icon"><img src="res/img/icon/ic_laravel.png"></div>
+<div class="col-md-3" style="margin:5px 0;text">Laravel</div>
+</div>
+<div class="skill-set">
+<div class="col-md-1 icon"><img src="res/img/icon/ic_polymer.png"></div>
+<div class="col-md-3" style="margin:5px 0;text">Polymer</div>
+</div>
+<div class="skill-set">
+<div class="col-md-1 icon"><img src="res/img/icon/ic_php.png"></div>
+<div class="col-md-3" style="margin:5px 0;text">PHP</div>
+</div>
+<div class="skill-set">
+<div class="col-md-1 icon"><img src="res/img/icon/ic_mysql.png"></div>
+<div class="col-md-3" style="margin:5px 0;text">MySQL</div>
+</div>
+<div class="skill-set">
+<div class="col-md-1 icon"><img src="res/img/icon/ic_java.png"></div>
+<div class="col-md-3" style="margin:5px 0;text">Java</div>
+</div>
+<div class="skill-set">
+<div class="col-md-1 icon"><img src="res/img/icon/ic_cnet.png"></div>
+<div class="col-md-3" style="margin:5px 0;text">C#.Net</div>
+</div>
+<div class="skill-set">
+<div class="col-md-1 icon"><img src="res/img/icon/ic_vbnet.jpg"></div>
+<div class="col-md-3" style="margin:5px 0;text">VB.NET</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="content" style="display:none">
+<div class="row">
+<div class="panel panel-default col-md-6 col-md-offset-3" style="border:none;box-shadow:none;">
+<div class="panel-body">
+<a target="_blank" href="mailto:waiyin@chan.tech" class="fa fa-envelope fa-2x"></a>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="panel panel-default col-md-6 col-md-offset-3" style="border:none;box-shadow:none;">
+<div class="panel-body">
+<div class="col-md-4">
+<a target="_blank" href="http://www.hkie.org.hk/" class="fa"><img src="res/img/icon/ic_hkie.jpg"></a><br>
+The Hong Kong Institution of Engineers
+</div>
+<div class="col-md-4">
+<a target="_blank" href="http://speed-polyu.edu.hk/" class="fa"><img src="res/img/icon/ic_speed.png"></a><br>
+Speed - The Hong Kong Polytechnic University
+</div>
+<div class="col-md-4">
+<a target="_blank" href="http://www.ive.edu.hk/" class="fa"><img src="res/img/icon/ic_ive.png"></a><br>
+The Hong Kong Institute of Vocation Education
+</div>
+<div>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script>
+
+</div></div></div></body></html>

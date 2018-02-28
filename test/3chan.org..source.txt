@@ -1,0 +1,40 @@
+<html data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAKX74ixpzVyXbJprcLfbH4psP4+L2entqri0lzh6pkAaXLPIcclv6DQBeJJjGFWrBIF6QMyFwXT5CCRyjS2penECAwEAAQ==_lO8AERXPJjTPbbJFt1GYWIaDNwTiCtiSLFcRABfgN4OWIoZxtEMsW5L7URH+bk5WzPGGw/mNvD89OzqT43mDFg=="><head>
+				  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+				  <meta name="viewport" content="width=device-width"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"><script type="text/javascript">
+	<!--
+	dimensionUpdated = 0;
+	function applyFrameKiller()
+	{
+		if(window.top != self)
+		{
+			cHeight = 0;
+			if( typeof( window.innerHeight ) != 'undefined' ) {
+			//Non-IE
+			cHeight = window.innerHeight;
+			dimensionUpdated = 1;
+			} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight )  ) {
+			//IE 6+ in 'standards compliant mode'
+			cHeight = document.documentElement.clientHeight;
+			dimensionUpdated = 1;
+			} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+			//IE 4 compatible
+			cHeight = document.body.clientHeight;
+			dimensionUpdated = 1;
+			}
+			if( cHeight <= 250 && dimensionUpdated == 1)
+			{
+				window.top.location = "http://3chan.org/?fp=IQrWDYM67%2FuxPtMoHt3JlTtGC76JArS2iznh2EmeFLU2qJcSyFZzT7Sd8sl219bTlHe0fww%2FQCtsZlo4tuEo3g%3D%3D&prvtof=rPh9CoB%2B4lDA0kHdt0cAhMPgwl7sD5Qk94vOLC0eESs%3D&poru=3%2BpJDuzF%2FN3bzfT1AqWmoWRcQs4kE%2FFnUXJ7bukrB8K0yzasU2bWlWhksYvv44Ji&cifr=1&";
+			}
+		}
+	}
+
+	applyFrameKiller();
+	// -->
+</script><script type="text/javascript">try{document.cookie = 'fjccheck=1';}catch(exception){}</script></head><frameset rows="100%,*" frameborder="no" border="0" framespacing="0">
+	<frame src="http://3chan.org/?fp=IQrWDYM67%2FuxPtMoHt3JlTtGC76JArS2iznh2EmeFLU2qJcSyFZzT7Sd8sl219bTlHe0fww%2FQCtsZlo4tuEo3g%3D%3D&amp;prvtof=YrJrZ4uJ0cS28b3PGX1UPxJqlVZjXHBWj8ozgQHehYc%3D&amp;poru=gcV%2BemMEJk0XPYMz3RsO%2BZBKySuCV1ZzyIwCrPjJBZA7JPMEhpQ7AZgOjuG1Z7u5&amp;">
+</frameset>
+<noframes>
+	<body bgcolor="#ffffff" text="#000000">
+	<a href="http://3chan.org/?fp=IQrWDYM67%2FuxPtMoHt3JlTtGC76JArS2iznh2EmeFLU2qJcSyFZzT7Sd8sl219bTlHe0fww%2FQCtsZlo4tuEo3g%3D%3D&prvtof=YnlTFuvoyONeaCTi8yxkX2P3rscam7caviuJqn4K3K8%3D&poru=ELS%2B6QjFa%2FxF7BnzK0ayTN4A9zf3bsm5Lba4Vu932zjLVpFT9rw6uaqX3%2FW%2FPMjr&">Click here to proceed</a>.
+	</body>
+</noframes></html>

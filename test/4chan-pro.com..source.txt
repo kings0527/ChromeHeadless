@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="google-site-verification" content="ALdVjPjItLxOFGKIZCIsZEBPhnCSLnxrMr9fZ64hzQI">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/emeklmoopkloimhldnfmbjnjglepchai"> 
+
+</head>
+<body>
+
+<div id="main">
+
+<h1 id="header">4CHAN PLUS PRO</h1>
+
+<div id="about">THE BEST WAY TO BROWSE 4CHAN! ALLOWS USERS TO HOVER OVER<br>IMAGES TO ENLARGE THEM AND CONTAINS A TON OF EXTRAS TO MORE<br>EASILY BROWSE THE 4CHAN BOARDS.</div>
+
+<ul>
+<li>- Hover over images for the large version
+</li><li>- Click to expand images to full scale, double-/middleclick to open in new tab
+</li><li>- Expand/hide threads
+</li><li>- Hover over quotes to view the referred post
+</li><li>- Backlinking
+</li><li>- Bookmarks
+</li><li>- Quick reply
+</li><li>- Quick report
+</li><li>- Auto-fetch new posts in threads
+</li><li>- Preload all images in a thread
+</li><li>- Link activation
+</li><li>- Youtube, Vocaroo and Soundcloud embed
+</li><li>- Replycount and unread post count
+</li><li>- Smartbar with board navigation and other shortcuts
+</li><li>- Autonoko
+</li><li>- Itim
+</li></ul>
+
+<a href="#" onclick="chrome.webstore.install( 'https://chrome.google.com/webstore/detail/emeklmoopkloimhldnfmbjnjglepchai'); " id="button" title="Download"><div id="text">DOWNLOAD</div></a>
+
+<a href="/siteprivacy.html" target="_blank" style="
+    margin-top: 10px;
+    display: block;
+    color: #fff;
+    text-align: left;
+    font-size: 13px;
+    position: absolute;
+    top: 600px;
+">Privacy Policy</a>
+
+</div>
+
+
+</body></html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html lang="ja"><head>
+<meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
+<title>DOMAIN ERROR</title>
+<style type="text/css">
+	<!--
+		body { font-family: 'Tahoma, Verdana'; line-height: 130%; }
+	-->
+	</style>
+</head>
+
+<body>
+
+<p><strong>ドメインウェブの設定が見つかりません</strong></p>
+<p>考えられる原因</p>
+<ul>
+	<li>ドメインウェブの設定がまだ行われていない。</li>
+	<li>ドメインウェブの設定がまだ反映されていない。(反映には数時間～24時間かかることがあります)</li>
+	<li>ドメインウェブ・DNSの設定が誤っている。</li>
+	<li>アカウントが存在しない、契約が終了している、削除されている。</li>
+</ul>
+
+
+
+
+</body></html>

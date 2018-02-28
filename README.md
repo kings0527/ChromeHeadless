@@ -90,6 +90,10 @@ nodejs pup_run.js --url=http://facebook.com  0.96s user 0.18s system 64% cpu 1.7
 
 - The html source: [TEXT](https://github.com/ririhedou/ChromeHeadless/blob/master/fb/facebook.com.source.txt)
 
+## Performance
+
+For 225 test urls, the total time consumption is 335 seconds (1.5s/per url).
+
 
 ## Tutorials (I read)
 

@@ -1,0 +1,95 @@
+<html><head>
+<title>Catalyst for Change LLC</title>
+
+<meta name="generator" content="Created Using Yahoo! Wizards 2.61.65">
+</head>
+<body bgcolor="#D5D8F5" link="#0000FF" vlink="#FF0000" text="#000000" onload="window.onresize=new Function('if (navigator.appVersion==\'Netscape\') history.go(0);');">
+<div id="root" style="position:absolute;top:0;left:0;width:781px;height:1270px">
+<div style="position:absolute;left:9;top:9;width:760;height:105;">
+<table width="760" height="105" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><img height="105" width="760" src="http://www.geocities.com/clipart/pbi/pictures/Templates/blueprintsRow_blue.gif" border="0"></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:9;top:114;width:141;height:595;">
+<table width="141" height="595" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><img height="595" width="141" src="http://www.geocities.com/clipart/pbi/pictures/Templates/blueprintsColumn_blue.gif" border="0"></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:30;top:79;width:728;height:31;">
+<table width="728" height="31" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><b><font face="Helvetica" size="+2"><span style="font-size:24">Catalyst for Change LLC</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:19;top:9;width:750;height:70;">
+<table width="750" height="70" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><!-- Webcard Header -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td align="right" valign="top">
+
+</td></tr></tbody></table></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:187;top:132;width:468;height:19;">
+<table width="468" height="19" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><b><font face="Helvetica"><span style="font-size:14">Ramp Up Your Competitive Advantage!</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:187;top:165;width:468;height:645;">
+<table width="468" height="645" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><font face="Helvetica"><span style="font-size:14">Driving profitability by developing&nbsp; effective leaders, high impact teams, and wildly successful change initiatives.&nbsp; We deliver positive ROI from our sustainable solutions.<br><br>Over the last 25 years we have successfully worked companies from a broad spectrum:<br><br>International<br>Technology driven organizations<br>Auto/Yacht/Electrical / Furniture Mfg<br>Utilities<br><br>Motorsports<br>Metal Fabrication<br>Woven and Non Woven Fabric Mfg<br>Bio-Tech Pharmaceutical<br><br>Consumer Products<br>Financial Services / Insurance<br>Healthcare<br>Telecommunications<br><br>Retail<br>Transportation, Warehousing<br>Government and Military<br>Gaming<br><br>Our Focus is: <br>Leadership Development &amp; Coaching (Board Certified Executive Coach + certifications in numerous assessments)<br>Strategic Planning<br>Lean and Six Sigma(certified)<br>Mission/Values<br>Strategic &amp; Operational Alignment<br>Culture<br>High performing Teams<br>Handling Difficult Employees<br>Performance Management &amp; Improvement<br>Technology infusion, and <br>Employee satisfaction&nbsp; <br><br>Janice Black, Ph.D., SPHR<br>Head Catalyst</span></font></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:187;top:873;width:468;height:19;">
+<table width="468" height="19" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><b><font face="Helvetica"><span style="font-size:14">Contact Information</span></font></b></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:187;top:905;width:63;height:19;">
+<table width="63" height="19" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><font face="Helvetica"><span style="font-size:14">Email :</span></font></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:259;top:905;width:211;height:30;">
+<table width="211" height="30" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><a href="mailto:janiceblack@catalyst-4change.com"><font face="Helvetica"><span style="font-size:14">janiceblack@catalyst-4change.com</span></font></a></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:187;top:938;width:63;height:19;">
+<table width="63" height="19" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><font face="Helvetica"><span style="font-size:14">Phone :</span></font></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:259;top:938;width:211;height:19;">
+<table width="211" height="19" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><font face="Helvetica"><span style="font-size:14">336-416-1124 cell</span></font></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:187;top:960;width:63;height:19;">
+<table width="63" height="19" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><font face="Helvetica"><span style="font-size:14">Address :</span></font></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:259;top:960;width:211;height:19;">
+<table width="211" height="19" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><font face="Helvetica"><span style="font-size:14">2082 Walker Road, Suite 100</span></font></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:259;top:982;width:211;height:19;">
+<table width="211" height="19" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><font face="Helvetica"><span style="font-size:14">Winston Salem</span></font></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:259;top:1004;width:211;height:19;">
+<table width="211" height="19" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><font face="Helvetica"><span style="font-size:14">NC</span></font></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:259;top:1026;width:211;height:19;">
+<table width="211" height="19" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><font face="Helvetica"><span style="font-size:14">27106</span></font></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:259;top:1048;width:211;height:19;">
+<table width="211" height="19" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><font face="Helvetica"><span style="font-size:14">USA</span></font></td>
+</tr></tbody></table></div>
+<div style="position:absolute;left:189;top:1183;width:465;height:75;">
+<table width="465" height="75" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top">
+	<td><!-- Webcard Footer -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td align="center" valign="top">
+<div align="center">
+    <small>
+        Powered by Yahoo! <a href="http://www.luminate.com/webhosting">Web Hosting</a>. 
+        Copyright Yahoo, Inc. 
+    </small>
+</div>
+
+</td></tr></tbody></table></td>
+</tr></tbody></table></div>
+</div>
+
+
+</body></html>

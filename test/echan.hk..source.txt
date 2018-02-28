@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" href="/faces/javax.faces.resource/theme.css?ln=primefaces-">
+<meta name="description">
+<meta name="MobileOptimized" content="320">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfO4G9oPX5CYbdcpDefCDGcCYc8_f42YQ" type="text/javascript"></script><script type="text/javascript" src="/faces/javax.faces.resource/jquery/jquery.js?ln=primefaces&amp;v=6.1"></script><script type="text/javascript" src="/faces/javax.faces.resource/jquery/jquery-plugins.js?ln=primefaces&amp;v=6.1"></script><script type="text/javascript" src="/faces/javax.faces.resource/core.js?ln=primefaces&amp;v=6.1"></script><script type="text/javascript" src="/faces/javax.faces.resource/components.js?ln=primefaces&amp;v=6.1"></script><link type="text/css" rel="stylesheet" href="/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.1"><script type="text/javascript" src="/faces/javax.faces.resource/gmap/gmap.js?ln=primefaces&amp;v=6.1"></script><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en';}</script>
+		<title>ECHAN.HK.</title><style>
+.ui-panelgrid tr,.ui-panelgrid td {
+	border: 0 !important;
+}
+
+td .ui-selectonemenu {
+	display: block;
+}
+
+
+</style></head>
+	<body style="background: #FFFFFF;margin-top:10px;margin-left:auto;margin-right:auto;width:100%;">
+<form id="j_idt6" name="j_idt6" method="post" action="/faces/index.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt6" value="j_idt6">
+
+		<br>
+		<br>
+		<br>
+		<br><div id="j_idt6:j_idt174" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt6_j_idt174"><div id="j_idt6:j_idt174_content" class="ui-panel-content ui-widget-content">
+			<div align="center">
+			<table width="720" border="0">
+				<tbody><tr>
+					<td height="130">
+					<div align="center"><a href="http://www.hkdnr.hk"><img src="img/parking.gif" width="620" height="50" border="0"></a></div>
+					</td>
+				</tr>
+				<tr>
+					<td height="346">
+					<div align="center">
+					<p><a href="http://www.hkdnr.hk"><img src="img/hkdnr.jpg" width="120" height="120" border="0"></a> <br>
+					</p>
+					<p><font face="Arial, Helvetica, sans-serif"><strong>ECHAN.HK. is currently using domain parking
+					service provided by: </strong></font></p>
+					<p align="center"><strong><font color="#000066" face="Arial, Helvetica, sans-serif"> HONG KONG DOMAIN
+					NAME REGISTRATION COMPANY LTD. (HKDNR)
+					</font></strong></p>
+					<p><br>
+					</p>
+					<p>&nbsp;</p>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td height="61">
+					<div align="center"><font color="#000066" size="-1" face="Times New Roman, Times, serif"><em><strong><img src="img/arrow.gif" width="28" height="23" align="absmiddle">
+					<a href="http://www.hkirc.net.hk/hkdnr/service_partner.jsp">The
+					HKDNR Service Partners providing web-hosting and related name
+					services.</a></strong></em></font></div>
+					</td>
+				</tr>
+			</tbody></table>
+			</div></div></div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-5996486840475297796:-1303209529154308208" autocomplete="off">
+</form>
+<div id="textarea_simulator" style="position: absolute; top: 0px; left: 0px; visibility: hidden;"></div></body></html>

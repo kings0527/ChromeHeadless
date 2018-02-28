@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<meta name="description" content="愚夫之宝 个人主页 摄影 美女 模特 风光 人像 采风 软件 经验 Windows 计算机 编程 旅游 文章 诗词 纳兰容若 饮水词 工具 下载 连接 西藏 照片 写真 周庄 移动电话 手机 内码转换 注册码 Y2K 千年虫 新闻 愚夫 希望工程 世界杯 华师附中 WAP 汽车 车展 2000 短信息 SMS Saya Richard 大师 图片管理 加密 北京 马尔代夫 七彩云南 博客 ">
+<title>愚夫视野</title>
+
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" href="animated_favicon1.gif" type="image/gif">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+
+<!--[if lt IE 7]>
+ <style type="text/css">
+ div, img { behavior: url(iepngfix.htc) }
+ </style>
+<![endif]-->
+
+<!-- link rel="stylesheet" href="rchan.css"-->
+<!-- link rel="stylesheet" href="menu.css"-->
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: 宋体;
+	font-size: 9px;
+	color: #FFFFFF;
+}
+
+body {
+	background-color: #000000;
+}
+.style1 {font-family: Arial, Helvetica, sans-serif}
+-->
+
+</style>
+
+<!-- script src="menuBar.js" language="JavaScript"-->
+
+<link href="cover.css" rel="stylesheet" type="text/css">
+
+<!-- link href="normal_text.css" rel="stylesheet" type="text/css"-->
+
+<style type="text/css">
+
+<!--
+.style2 {font-size: 14px}
+a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.style3 {
+	font-size: 12px;
+	font-family: "宋体";
+}
+
+.style4 {font-size: 14px; font-weight: bold; }
+-->
+
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0">
+
+<table width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td>
+	<!-- script language="JavaScript" src="rchan.js"-->
+    </td>
+  </tr>
+</tbody></table>
+
+<table width="602" height="380" border="0" align="center" cellpadding="0" cellspacing="0" background="images/cover3.jpg">
+  <tbody><tr>
+    <td>&nbsp;</td>
+  </tr>
+  
+</tbody></table>
+
+<div class="dock" id="dock">
+  <div class="dock-container" style="left: 280px; width: 240px;">
+<!--
+  <a class="dock-item" href="index.php" target="_self"><img src="cover/cover_home.png" alt="home"><span>愚夫主页</span></a>
+-->
+  <a class="dock-item" href="outside.html" target="_self" style="width: 40px; left: 0px;"><img src="cover/cover_outside.png" alt="travel"><span>人在他乡</span></a>
+
+  <a class="dock-item" href="photo.html" target="_self" style="width: 40px; left: 40px;"><img src="cover/cover_photo.png" alt="photo"><span>行行摄摄</span></a>
+
+  <a class="dock-item" href="articles.html" target="_self" style="width: 40px; left: 80px;"><img src="cover/cover_article.png" alt="article"><span>朝花夕拾</span></a> 
+
+  <a class="dock-item" href="digitals.php" target="_self" style="width: 40px; left: 120px;"><img src="cover/cover_digital.png" alt="digital"><span>数码生活</span></a>
+
+  <a class="dock-item" href="under_construction.html" target="_self" style="width: 40px; left: 160px;"><img src="cover/cover_self.png" alt="self"><span>愚夫自传</span></a>
+
+  <a class="dock-item" href="http://www.donimage.com/blog/index.php" target="_blank" style="width: 40px; left: 200px;"><img src="cover/cover_blog.png" alt="blog"><span>愚夫日记</span></a>
+
+</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(
+		function() {
+			$('#dock').Fisheye(
+				{
+					maxWidth: 50,
+					items: 'a',
+					itemsText: 'span',
+					container: '.dock-container',
+					itemWidth: 40,
+					proximity: 90,
+					valign : 'bottom',
+					halign : 'center'
+				}
+			)
+		}
+	);
+</script>
+
+<p align="center" class="style1 style3"><br><br><br>
+<a href="http://www.miibeian.gov.cn" target="_blank">京ICP备05054242号</a>，您是第<a href="log_month.php"> 1211258 </a>位访客<script language="javascript" src="http://count42.51yes.com/click.aspx?id=425477217&amp;logo=11"></script><a href="http://countt.51yes.com/index.aspx?id=425477217" target="_blank"><img width="20" height="20" border="0" hspace="0" vspace="0" src="http://count42.51yes.com/count11.gif" alt="51YES网站统计系统"></a><iframe marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" src="http://count42.51yes.com/sa.htm?id=425477217&amp;refe=&amp;location=http%3A//www.donimage.com/&amp;color=24x&amp;resolution=800x600&amp;returning=0&amp;language=undefined&amp;ua=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/66.0.3347.0%20Safari/537.36" height="0" width="0"></iframe>
+<a href="http://www.jjpolice.gov.cn/check.php?id=20080313231232" target="_blank"><img src="/images/beian.gif" height="20" width="15" border="0" alt="网警备案"></a>
+<a href="http://www.jjpolice.gov.cn/bjts/baojing1.php" target="_blank"><img src="/images/wl110.jpg" height="20" width="20" border="0" alt="网上报警"></a>
+</p>
+
+<p align="center" class="style1">
+(C) Coptright 2005-2017 Richard Chen </p>
+
+
+
+</body></html>
