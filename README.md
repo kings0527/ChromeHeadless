@@ -95,10 +95,14 @@ nodejs pup_run.js --url=http://facebook.com  0.96s user 0.18s system 64% cpu 1.7
 
 ### A large scale test
 
+```
+//--dir output directory
+time nodejs pup_run.js --file=_home_datashare_dns_history_20170906_facebook.com.out --dir=fbtest/
+```
+
 For 225 test urls, the total time consumption is 335 seconds (1.5s/per url).
 
 For 3165 test urls, the total time consumption is 763.21s user 130.13s system 17% cpu 1:27:09.00 total (1.65s/per url).
-
 
 
 ## Tutorials (I read)
@@ -117,6 +121,7 @@ How to build a :shipit:distributed:shipit: system:
 
 ## Problems
 
-- What is there are too many renders? (pkill chrome)
+- What if there are too many renders? (pkill chrome or run 100 urls each time)
 -
+
 More code is on the way

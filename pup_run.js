@@ -67,6 +67,7 @@ async function run_single(myUrl){
 
 /*
 *  run multiple URL instances
+*  @input: list of URLs
 */
 async function run_multiple_urls(urlList){
 
@@ -84,7 +85,6 @@ async function run_multiple_urls(urlList){
 
     page = await browser.newPage();
     try {
-
             var arrayOfStrings = String(myUrl).split('/');
             let name = globalDir + arrayOfStrings[arrayOfStrings.length-1];
 
@@ -115,15 +115,14 @@ async function run_multiple_urls(urlList){
             await page.screenshot({path: name + '.screen.png'});
 
             console.log('[3] Screen was saved.');
-
         }
     catch (e)
         {
-          console.log(e);
-          console.log('Cannot go to for ' + myUrl + ', continue...');
-          continue;
+            console.log(e);
+            console.log('Cannot go to for ' + myUrl + ', continue...');
+            continue;
         }
-        await page.close();
+    await page.close();
 
   }
   await browser.close();
@@ -154,6 +153,7 @@ async function run_file_in_separate_fashion(beginFile)
     {
         var subArray = urlList.slice(i,i+interval)
         await run_multiple_urls(subArray);
+
     }
 
 }
