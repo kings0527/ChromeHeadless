@@ -31,14 +31,14 @@ Directly run headless chrome to get screenshot and dump html page, in separate s
 google-chrome --headless --disable-gpu —-timeout=300 --enable-logging --v=1  \
 --screenshot --window-size=1280,1696  http://facebook.com
 
-//PS: --enable-logging --v=1 will log all the intermediate data, you have to parse the log date to get the final URL.
+//PS: --enable-logging --v=1 will log all the intermediate data, \
+// you have to parse the log date to get the final URL.
 
 //dump source
 google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 
 
 google-chrome --headless --hide-scrollbars --remote-debugging-port=9222 --disable-gpu &
-
 ```
 
 Or install npm dependence to have more functionalities:
