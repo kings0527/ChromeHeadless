@@ -37,7 +37,7 @@ async function run_single(myUrl){
 
         var directionChain = 'Redirection: from url:<' + myUrl + '> to <' + url + '>';
 
-        fs.writeFile(name + '.redirect', directionChain, (err) => {
+        await fs.writeFile(name + '.redirect', directionChain, (err) => {
             if (err) throw err;
             console.log('[1] Redirection Chain was successfully saved.');
         });
@@ -45,7 +45,7 @@ async function run_single(myUrl){
         let HTML = await page.content(); //content is enough for the HTML content
 
         var filepath = name + '.source.txt';
-        fs.writeFile(filepath, HTML, (err) => {
+        await fs.writeFile(filepath, HTML, (err) => {
             if (err) throw err;
             console.log('[2] HTML was successfully saved.');
         });
@@ -68,6 +68,7 @@ async function run_single(myUrl){
 /*
 *  run multiple URL instances
 *  @input: list of URLs
+*
 */
 async function run_multiple_urls(urlList){
 

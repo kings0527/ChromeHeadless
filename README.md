@@ -63,7 +63,6 @@ The url is parsed into the parameter.
 nodejs pup_run.js --url=http://facebook.com
 ```
 
-
 ## Test and Samples:
 
 ### Single case test
@@ -119,7 +118,7 @@ How to build a :shipit:distributed:shipit: system:
 - Brozzler [LINK](https://github.com/internetarchive/brozzler)
 
 
-## Problems
+## FAQ
 
 - What if there are too many renders? (pkill chrome or run 100 urls each time)
 -
