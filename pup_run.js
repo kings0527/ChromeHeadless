@@ -161,13 +161,14 @@ async function run_file_in_separate_fashion(beginFile)
 
 
 if (beginUrl){
-    console.log('Run single file......');
+    console.log('Run single url......');
     run_single(beginUrl);
 }
 
 
 if (beginFile)
 {
+    console.log('Run single file.......');
     run_file_in_separate_fashion(beginFile);
 }
 
