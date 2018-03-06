@@ -131,6 +131,7 @@ How to build a :shipit:distributed:shipit: system:
 ## FAQ
 
 - What if there are too many renders? (pkill chrome or run 100 urls each time)
--
+- Error in CentOS 7? (https://github.com/GoogleChrome/puppeteer/issues/290)
+  try --no-sandbox
 
 More code is on the way
