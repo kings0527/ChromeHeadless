@@ -43,6 +43,14 @@ google-chrome --headless --hide-scrollbars --remote-debugging-port=9222 --disabl
 
 Or install npm dependence to have more functionalities:
 ```
+uname -a
+Linux XXXX 3.13.0-132-generic #181-Ubuntu SMP Wed Sep 13 13:25:03 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+
+google-chrome --version
+Google Chrome 62.0.3202.89
+
+
 npm -v
 5.6.0
 
