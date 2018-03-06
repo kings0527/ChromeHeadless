@@ -17,7 +17,9 @@ process.on('unhandledRejection', up => { throw up })
 */
 async function run_single(myUrl){
 
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({args: ['--no-sandbox']});
+    //if you do not use this, error will happen on CentOS 7
+    
     var page = null;
 
     page = await browser.newPage();
@@ -74,7 +76,10 @@ async function run_multiple_urls(urlList){
 
   var page = null;
 
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({args: ['--no-sandbox']});
+  //if you do not use this, error will happen on CentOS 7
+
+
   var arrayLength = urlList.length;
 
   for (var i = 0; i < arrayLength; i++) {
