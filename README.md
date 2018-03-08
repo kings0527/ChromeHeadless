@@ -90,7 +90,7 @@ time nodejs pup_run.js --url=http://facebook.com
 [2] HTML was successfully saved.
 [3] Screen was saved.
 
-nodejs pup_run.js --url=http://facebook.com  0.96s user 0.18s system 64% cpu 1.756 total
+node pup_run.js --url=http://facebook.com  0.96s user 0.18s system 64% cpu 1.756 total
 ```
 
 - The screenshot: <img src="https://github.com/ririhedou/ChromeHeadless/blob/master/fb/facebook.com.screen.png" width="800" height="400" />
@@ -108,7 +108,7 @@ nodejs pup_run.js --url=http://facebook.com  0.96s user 0.18s system 64% cpu 1.7
 
 ```
 //--dir output directory
-time nodejs pup_run.js --file=_home_datashare_dns_history_20170906_facebook.com.out --dir=fbtest/
+time node pup_run.js --file=_home_datashare_dns_history_20170906_facebook.com.out --dir=fbtest/
 ```
 
 For 225 test urls, the total time consumption is 335 seconds (1.5s/per url).
@@ -116,6 +116,15 @@ For 225 test urls, the total time consumption is 335 seconds (1.5s/per url).
 For 3165 test urls, the total time consumption is 763.21s user 130.13s system 17% cpu 1:27:09.00 total (1.65s/per url).
 
 For 11483 test urls, the total time consumption 2968.55s user 516.68s system 19% cpu 4:55:55.49 (1.54s/per url).
+
+
+### Distribute version of the crawling
+
+Use the task_dispatch to distribute the tasks.
+
+```
+gcc task_dispatcher.c --std=c99
+```
 
 
 ## Tutorials (I read)

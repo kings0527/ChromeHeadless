@@ -7,7 +7,31 @@ var argv = require('minimist')(process.argv.slice(2));
 
 const beginUrl = argv.url;
 const beginFile = argv.file;
-const globalDir = argv.dir || './'
+const beginId = (argv.id || '').toString();
+
+var outputDir = null;
+
+if (beginId.length > 0)
+{  outputDir = argv.dir + beginId + '/'|| './' }
+else
+{  outputDir = argv.dir || './' }
+
+const globalDir = outputDir;
+console.log("globalDir is " + globalDir);
+
+
+function checkDirectorySync(directory) {
+  try {
+    fs.statSync(directory);
+    console.log("Existing "+ directory + ", no need tp recreate");
+
+  } catch(e) {
+    fs.mkdirSync(directory);
+    console.log("Create a directory as "+ directory);
+  }
+}
+
+checkDirectorySync(globalDir);
 
 //terminate the process in case some weird things happen
 process.on('unhandledRejection', up => { throw up })
@@ -27,7 +51,8 @@ async function run_single(myUrl){
     var arrayOfStrings = String(myUrl).split('/');
 
     let name = globalDir + arrayOfStrings[arrayOfStrings.length-1];
-    console.log(name);
+
+    console.log("The store location is at " + name);
 
     try
     {
@@ -87,7 +112,7 @@ async function run_multiple_urls(urlList){
     //the i-th element
     myUrl = urlList[i];
 
-    console.log(String(i) +'-th: ' + myUrl);
+    //console.log(String(i) +'-th: ' + myUrl);
 
     page = await browser.newPage();
     try {
@@ -100,13 +125,13 @@ async function run_multiple_urls(urlList){
 
             const url = await page.url();
 
-            console.log('[1] Redirection: from url:<' + myUrl + '> to <' + url + '>');
+            //console.log('[1] Redirection: from url:<' + myUrl + '> to <' + url + '>');
 
             var directionChain = 'Redirection: from url:<' + myUrl + '> to <' + url + '>';
 
             await fs.writeFile(name + '.redirect', directionChain, (err) => {
                 if (err) throw err;
-                console.log('[1] Redirection Chain was successfully saved.');
+                //console.log('[1] Redirection Chain was successfully saved.');
             });
 
             let HTML = await page.content(); //content is enough for the HTML content
@@ -114,17 +139,18 @@ async function run_multiple_urls(urlList){
             var filepath = name + '.source.txt';
             await fs.writeFile(filepath, HTML, (err) => {
                 if (err) throw err;
-                console.log('[2] HTML was successfully saved.');
+                //console.log('[2] HTML was successfully saved.');
             });
 
             await page.setViewport({width: 1600, height: 800});
             await page.screenshot({path: name + '.screen.png'});
 
-            console.log('[3] Screen was saved.');
+            //console.log('[3] Screen was saved.');
+            console.log("Done on "+ myUrl);
         }
     catch (e)
         {
-            console.log(e);
+            //console.log(e);
             console.log('Cannot go to for ' + myUrl + ', continue...');
             continue;
         }
@@ -152,29 +178,41 @@ async function run_file_in_separate_fashion(beginFile)
     urlList.sort();
     console.log('Total length:' + String(urlList.length));
     var length = urlList.length;
-    var interval = 50;
+    var interval = 20;
     for (var i = 0; i < length; i = i+interval)
     {
         var subArray = urlList.slice(i,i+interval)
         await run_multiple_urls(subArray);
-
     }
 
 }
 
 
+//The main function to run this
 if (beginUrl){
     console.log('Run single url......');
     run_single(beginUrl);
 }
 
-
-if (beginFile)
+else if (beginFile)
 {
     console.log('Run single file.......');
     run_file_in_separate_fashion(beginFile);
 }
 
+else if (beginId)
+{
+    var di = require('./map_domain_to_id');
+    var filename = './domain_collect/' + di.get_domain_from_id(beginId);
+    run_file_in_separate_fashion(filename);
+
+
+}
+
+else
+{
+    console.log("Nothing happened");
+}
 //run_single(beginUrl);
 //var urlList = ['http://facebook.com', 'http://google.com', 'http://googggg.vvv'];
 //run_multiple_urls(urlList);

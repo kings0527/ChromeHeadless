@@ -1,0 +1,80 @@
+//author ketian
+//ririhedou@gmail.com
+#define _XOPEN_SOURCE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+
+#define WATHEVER_CMD_PREFIX "node pup_run.js --dir=fb/ --id=%d"
+#define PROC_MAX 3
+//The maximum processes the machine can tolerate
+
+void work(int i)
+{
+    char buf[1024];
+    snprintf(buf, 1024, WATHEVER_CMD_PREFIX, i);
+    //use snprintf to avoid buffer overflow
+    system(buf);
+}
+
+//sample command as:
+//./a.out 1 4
+int main(int argc, char** argv)
+{
+    //int ppid = getpid();
+    if (argc<3)
+    {
+	    //usage();
+	    exit(-1);
+    }
+    int start_val = atoi(argv[1]);
+    int stop_val = atoi(argv[2]);
+
+    int shmid = shmget(IPC_PRIVATE, sizeof(int), IPC_CREAT | 0666);
+    if (shmid<0)
+    {
+	    exit(-1);
+    }
+
+    int* counter;
+    counter = shmat(shmid, NULL, 0);
+    *counter = 0;
+
+    for (int i=start_val; i<=stop_val; i++)
+    {
+        int cpid;
+	    //retry counter
+        int rcnt = 0;
+       	//respwaning new task, increase counter by one
+	    while(!__sync_bool_compare_and_swap(counter,*counter, (*counter) +1));
+retry:
+        cpid = fork();
+        rcnt++;
+        if (cpid==0)
+        {
+            work(i);
+	        while(!__sync_bool_compare_and_swap(counter,*counter, (*counter)-1));
+	        printf("[SPONGEBOB]successfully done %d counter=%d\n", i, *counter);
+	        shmdt(counter);
+            exit(-1);
+        }
+        else if (cpid==-1)
+        {
+            //failed to fork...
+            printf("failed...");
+            if (rcnt>10)
+            {
+                goto out; //we re-try 100 times
+            }
+            goto retry;
+        }
+out:
+        while (*counter>PROC_MAX)
+        {
+            sleep(10);
+        }
+    }
+}

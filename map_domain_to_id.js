@@ -1,19 +1,9 @@
 //author ketian
 //ririhedou@gmail.com
 
-var path = "./domain_collect/";
-/*
-fs.readdir(path, function(err, items) {
-    var domain_id_map = {};
-    items.sort();
-    for (var i=0; i<items.length; i++) {
-        domain_id_map[i] = items[i];
-    }
 
-    console.log(domain_id_map);
-});
-*/
-var domain_id_map = {
+
+const domain_id_map = {
   '0': '_home_datashare_dns_history_20170906_1688.com.out',
   '1': '_home_datashare_dns_history_20170906_360.cn.out',
   '2': '_home_datashare_dns_history_20170906_39.net.out',
@@ -782,19 +772,60 @@ var domain_id_map = {
   '765': '_home_datashare_dns_history_20170906_zynga.com.out' }
 
 
+/*
+fs.readdir(path, function(err, items) {
+    var domain_id_map = {};
+    items.sort();
+    for (var i=0; i<items.length; i++) {
+        domain_id_map[i] = items[i];
+    }
+
+    console.log(domain_id_map);
+});
+*/
+
+module.exports = {
+
+get_domain_from_id : get_domain_from_id,
+_id_map : domain_id_map
+};
+
+function get_domain_from_id(_id)
+{
+    return domain_id_map[_id];
+}
+
+var path = "./domain_collect/";
+
 function read_total_lines(domain_id_map, path){
-    var i = 0;
+    var i = 0, gap = 0;
     var fs = require('fs');
+    var total_lines = 1654446;
     for (var key in domain_id_map)
     {
-        console.log(key);
+        //console.log(key);
         var fileBuffer =  fs.readFileSync(path+domain_id_map[key]);
         var to_string = fileBuffer.toString();
         var split_lines = to_string.split("\n");
         i = i + split_lines.length-1;
+        gap = gap + split_lines.length-1;
+        if ((gap*1.0)/total_lines > 0.2)
+        {
+          console.log("SPLIT KEY: " + key.toString() + "  " + gap.toString() + "   " + (gap*1.0)/total_lines);
+          gap = 0;
+        }
     }
     console.log(i);
 }
 
+//console.log(get_domain_from_id('1'));
+/*
+SPLIT KEY: 118  371829   0.2247453226034576
+SPLIT KEY: 309  334969   0.2024659614154829
+SPLIT KEY: 453  333664   0.20167717773804644
+SPLIT KEY: 617  333384   0.20150793679576123
+1654446
 
-read_total_lines(domain_id_map, path);
+LEFT + subdomain
+*/
+//read_total_lines(domain_id_map, path);

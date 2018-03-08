@@ -11,3 +11,6 @@ appletest/**
 
 #ignore logs
 *.log
+
+#ignore all out files
+*.out
