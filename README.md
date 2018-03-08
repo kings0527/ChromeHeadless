@@ -39,6 +39,10 @@ google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 
 
 google-chrome --headless --hide-scrollbars --remote-debugging-port=9222 --disable-gpu &
+
+
+google-chrome --headless  --disable-gpu --window-size=1280,1696  --screenshot https://www.google.com 2&> /dev/null
+
 ```
 
 Or install npm dependence to have more functionalities:

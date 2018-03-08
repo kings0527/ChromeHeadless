@@ -19,7 +19,7 @@ async function run_single(myUrl){
 
     const browser = await puppeteer.launch({args: ['--no-sandbox']});
     //if you do not use this, error will happen on CentOS 7
-    
+
     var page = null;
 
     page = await browser.newPage();
@@ -150,11 +150,9 @@ async function run_file_in_separate_fashion(beginFile)
     }
 
     urlList.sort();
-
     console.log('Total length:' + String(urlList.length));
-
     var length = urlList.length;
-    var interval = 100;
+    var interval = 50;
     for (var i = 0; i < length; i = i+interval)
     {
         var subArray = urlList.slice(i,i+interval)

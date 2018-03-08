@@ -1,0 +1,5 @@
+(u'bulbagarden.net', 'bulbagarden.org.', 'bulbagarden.org', 'wrongTLD', '199.191.50.73')
+(u'bulbagarden.net', 'bulbagarden.it.', 'bulbagarden.it', 'wrongTLD', '185.53.178.6')
+(u'bulbagarden.net', 'bulbgarden.net.', 'bulbgarden.net', u'typo', '199.191.50.73')
+(u'bulbagarden.net', 'bulbgarden.com.', 'bulbgarden.com', u'typo', '69.172.201.153')
+(u'bulbagarden.net', 'bulbagarden.com.', 'bulbagarden.com', 'wrongTLD', '8.5.1.51')
