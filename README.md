@@ -41,7 +41,8 @@ google-chrome --headless --disable-gpu --dump-dom https://www.chromestatus.com/
 google-chrome --headless --hide-scrollbars --remote-debugging-port=9222 --disable-gpu &
 
 
-google-chrome --headless  --disable-gpu --window-size=1280,1696  --screenshot https://www.google.com 2&> /dev/null
+google-chrome --headless  --disable-gpu --window-size=1280,1696
+--screenshot https://www.google.com
 
 ```
 
@@ -77,7 +78,7 @@ nodejs pup_run.js --url=http://facebook.com
 
 ## Test and Samples:
 
-### Single case test
+### 1) Single case test
 
 Time for get all on facebook page: 1.7s.
 
@@ -104,12 +105,11 @@ node pup_run.js --url=http://facebook.com  0.96s user 0.18s system 64% cpu 1.756
 
 - The html source: [TEXT](https://github.com/ririhedou/ChromeHeadless/blob/master/fb/facebook.com.source.txt)
 
-### A large scale test
+### 2) A large scale test
 
 ```
 //--dir output directory
 time node pup_run.js --file=_home_datashare_dns_history_20170906_facebook.com.out --dir=fbtest/
-```
 
 For 225 test urls, the total time consumption is 335 seconds (1.5s/per url).
 
@@ -117,15 +117,17 @@ For 3165 test urls, the total time consumption is 763.21s user 130.13s system 17
 
 For 11483 test urls, the total time consumption 2968.55s user 516.68s system 19% cpu 4:55:55.49 (1.54s/per url).
 
+```
 
-### Distribute version of the crawling
+
+### 3) Distribute version
 
 Use the task_dispatch to distribute the tasks.
 
 ```
 gcc task_dispatcher.c --std=c99
+./a.out 1 100
 ```
-
 
 ## Tutorials (I read)
 
