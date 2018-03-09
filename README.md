@@ -120,9 +120,9 @@ For 11483 test urls, the total time consumption 2968.55s user 516.68s system 19%
 ```
 
 
-### 3) Distribute version :rocket::rocket::rocket::rocket::rocket::rocket:
+### 3) Distributed version :rocket::rocket::rocket::rocket::rocket::rocket:
 
-Use the task_dispatch to distribute the tasks.
+Use the task_dispatch to distribute the crawling tasks.
 
 ```
 gcc task_dispatcher.c --std=c99
