@@ -127,6 +127,8 @@ Use the task_dispatch to distribute the crawling tasks.
 ```
 gcc task_dispatcher.c --std=c99
 ./a.out start_idx stop_idx
+
+nohup ./a.out 1 10 &
 ```
 
 ## Tutorials (I read)

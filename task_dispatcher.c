@@ -10,15 +10,13 @@
 #include <sys/ipc.h>
 #include <sys/shm.h>
 
-#define WATHEVER_CMD_PREFIX "node pup_run.js --dir=fb/ --id=%d"
+#define WATHEVER_CMD_PREFIX "time node pup_run.js --dir=fb/ --id=%d"
 
 #define PROC_MAX 4
 //The maximum processes the machine can tolerate
 
+//you can customize the work with any task.
 void work(int i)
-/*
-* you can customize the work with any task.
-*/
 {
     char buf[1024];
     snprintf(buf, 1024, WATHEVER_CMD_PREFIX, i);
@@ -33,8 +31,8 @@ int main(int argc, char** argv)
     //int ppid = getpid();
     if (argc<3)
     {
-	    //usage();
-	    exit(-1);
+        //usage();
+        exit(-1);
     }
     int start_val = atoi(argv[1]);
     int stop_val = atoi(argv[2]);
@@ -42,7 +40,7 @@ int main(int argc, char** argv)
     int shmid = shmget(IPC_PRIVATE, sizeof(int), IPC_CREAT | 0666);
     if (shmid<0)
     {
-	    exit(-1);
+        exit(-1);
     }
 
     signal(SIGCHLD, SIG_IGN);
@@ -55,19 +53,19 @@ int main(int argc, char** argv)
     for (int i=start_val; i<=stop_val; i++)
     {
         int cpid;
-	    //retry counter
+        //retry counter
         int rcnt = 0;
-       	//respwaning new task, increase counter by one
-	    while(!__sync_bool_compare_and_swap(counter,*counter, (*counter) +1));
+        //respwaning new task, increase counter by one
+        while(!__sync_bool_compare_and_swap(counter,*counter, (*counter) +1));
 retry:
         cpid = fork();
         rcnt++;
         if (cpid==0)
         {
             work(i);
-	        while(!__sync_bool_compare_and_swap(counter,*counter, (*counter)-1));
-	        printf("[SPONGEBOB]successfully done %d counter=%d\n", i, *counter);
-	        shmdt(counter);
+            while(!__sync_bool_compare_and_swap(counter,*counter, (*counter)-1));
+            printf("[SPONGEBOB]successfully done %d counter=%d\n", i, *counter);
+            shmdt(counter);
             exit(-1);
         }
         else if (cpid==-1)

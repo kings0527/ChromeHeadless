@@ -7,7 +7,7 @@ var argv = require('minimist')(process.argv.slice(2));
 
 const beginUrl = argv.url;
 const beginFile = argv.file;
-const beginId = (argv.id || '').toString();
+const beginId = (argv.id.toString() || '').toString();
 
 var outputDir = null;
 
