@@ -1,18 +1,24 @@
 //author ketian
 //ririhedou@gmail.com
+
 #define _XOPEN_SOURCE
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <signal.h>
 #include <sys/ipc.h>
 #include <sys/shm.h>
 
 #define WATHEVER_CMD_PREFIX "node pup_run.js --dir=fb/ --id=%d"
-#define PROC_MAX 3
+
+#define PROC_MAX 4
 //The maximum processes the machine can tolerate
 
 void work(int i)
+/*
+* you can customize the work with any task.
+*/
 {
     char buf[1024];
     snprintf(buf, 1024, WATHEVER_CMD_PREFIX, i);
@@ -39,6 +45,9 @@ int main(int argc, char** argv)
 	    exit(-1);
     }
 
+    signal(SIGCHLD, SIG_IGN);
+    //to prevent zombie processes
+
     int* counter;
     counter = shmat(shmid, NULL, 0);
     *counter = 0;
@@ -64,15 +73,15 @@ retry:
         else if (cpid==-1)
         {
             //failed to fork...
-            printf("failed...");
-            if (rcnt>10)
+            printf("[SPONGEBOB]failed to fork on id=%d...\n", i);
+            if (rcnt>100)
             {
                 goto out; //we re-try 100 times
             }
             goto retry;
         }
 out:
-        while (*counter>PROC_MAX)
+        while (*counter>=PROC_MAX)
         {
             sleep(10);
         }

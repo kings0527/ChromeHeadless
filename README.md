@@ -120,13 +120,13 @@ For 11483 test urls, the total time consumption 2968.55s user 516.68s system 19%
 ```
 
 
-### 3) Distribute version
+### 3) Distribute version :rocket::rocket::rocket::rocket::rocket::rocket:
 
 Use the task_dispatch to distribute the tasks.
 
 ```
 gcc task_dispatcher.c --std=c99
-./a.out 1 100
+./a.out start_idx stop_idx
 ```
 
 ## Tutorials (I read)
@@ -148,5 +148,5 @@ How to build a :shipit:distributed:shipit: system:
 - What if there are too many renders? (pkill chrome or run 100 urls each time)
 - Error in CentOS 7? (https://github.com/GoogleChrome/puppeteer/issues/290)
   try --no-sandbox
-
+- How to kill zombie processes [LINK](https://www.geeksforgeeks.org/zombie-processes-prevention/)
 More code is on the way
