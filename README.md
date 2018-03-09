@@ -129,6 +129,36 @@ gcc task_dispatcher.c --std=c99
 ./a.out start_idx stop_idx
 
 nohup ./a.out 1 10 &
+
+
+pstree:
+a_cyclops.out─┬─a_cyclops.out───sh───node─┬─chrome─┬─chrome─┬─2*[chrome───14*[{chrome}]]
+              │                           │        │        ├─chrome───20*[{chrome}]
+              │                           │        │        ├─2*[chrome───21*[{chrome}]]
+              │                           │        │        ├─chrome───24*[{chrome}]
+              │                           │        │        └─chrome───44*[{chrome}]
+              │                           │        ├─chrome───6*[{chrome}]
+              │                           │        └─24*[{chrome}]
+              │                           └─9*[{node}]
+              ├─a_cyclops.out───sh───node─┬─chrome─┬─chrome─┬─3*[chrome───14*[{chrome}]]
+              │                           │        │        ├─chrome───27*[{chrome}]
+              │                           │        │        ├─chrome───22*[{chrome}]
+              │                           │        │        └─chrome───29*[{chrome}]
+              │                           │        ├─chrome───150*[{chrome}]
+              │                           │        └─22*[{chrome}]
+              │                           └─9*[{node}]
+              ├─a_cyclops.out───sh───node─┬─chrome─┬─chrome─┬─chrome───14*[{chrome}]
+              │                           │        │        └─chrome───16*[{chrome}]
+              │                           │        ├─chrome───6*[{chrome}]
+              │                           │        └─22*[{chrome}]
+              │                           └─9*[{node}]
+              └─a_cyclops.out───sh───node─┬─chrome─┬─chrome─┬─4*[chrome───14*[{chrome}]]
+                                          │        │        ├─2*[chrome───20*[{chrome}]]
+                                          │        │        └─chrome───23*[{chrome}]
+                                          │        ├─chrome───6*[{chrome}]
+                                          │        └─22*[{chrome}]
+                                          └─9*[{node}]
+
 ```
 
 ## Tutorials (I read)
