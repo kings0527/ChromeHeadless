@@ -23,7 +23,8 @@ console.log("globalDir is " + globalDir);
 function checkDirectorySync(directory) {
   try {
     fs.statSync(directory);
-    console.log("Existing "+ directory + ", no need tp recreate");
+    console.log("Existing "+ directory + ", no need to recreate");
+    process.exit();
 
   } catch(e) {
     fs.mkdirSync(directory);
@@ -117,6 +118,7 @@ async function run_multiple_urls(urlList){
     page = await browser.newPage();
     try {
             var arrayOfStrings = String(myUrl).split('/');
+
             let name = globalDir + arrayOfStrings[arrayOfStrings.length-1];
 
             await page.goto(myUrl,  { timeout: 5000 }); //5000 is 5000ms
@@ -152,7 +154,6 @@ async function run_multiple_urls(urlList){
         {
             //console.log(e);
             console.log('Cannot go to for ' + myUrl + ', continue...');
-            continue;
         }
     await page.close();
 
@@ -185,6 +186,8 @@ async function run_file_in_separate_fashion(beginFile)
         await run_multiple_urls(subArray);
     }
 
+    process.exit(0);
+
 }
 
 
@@ -205,8 +208,6 @@ else if (beginId)
     var di = require('./map_domain_to_id');
     var filename = './domain_collect/' + di.get_domain_from_id(beginId);
     run_file_in_separate_fashion(filename);
-
-
 }
 
 else
