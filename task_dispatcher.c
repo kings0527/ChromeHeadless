@@ -10,10 +10,14 @@
 #include <sys/ipc.h>
 #include <sys/shm.h>
 
-#define WATHEVER_CMD_PREFIX "time node pup_run.js --dir=fb/ --id=%d"
+#define WATHEVER_CMD_PREFIX "node pup_run.js --dir=fb/ --id=%d"
 
-#define PROC_MAX 4
+#define PROC_MAX 5
 //The maximum processes the machine can tolerate
+//5X Fast
+
+#define INTERVAL 5*60*60
+//2 hours
 
 //you can customize the work with any task.
 void work(int i)
@@ -64,14 +68,14 @@ retry:
         {
             work(i);
             while(!__sync_bool_compare_and_swap(counter,*counter, (*counter)-1));
-            printf("[SPONGEBOB]successfully done %d counter=%d\n", i, *counter);
+            printf("[SPONGEBOB]Done %d counter=%d\n", i, *counter);
             shmdt(counter);
             exit(-1);
         }
         else if (cpid==-1)
         {
             //failed to fork...
-            printf("[SPONGEBOB]failed to fork on id=%d...\n", i);
+            printf("[SPONGEBOB]Fail to fork on id=%d...\n", i);
             if (rcnt>100)
             {
                 goto out; //we re-try 100 times
@@ -84,4 +88,7 @@ out:
             sleep(10);
         }
     }
+
+    printf("[SPONGEBOB] Done and exit");
+    exit(0);
 }

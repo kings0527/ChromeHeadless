@@ -181,4 +181,8 @@ How to build a :shipit:distributed:shipit: system:
 - Error in CentOS 7? (https://github.com/GoogleChrome/puppeteer/issues/290)
   try --no-sandbox
 - How to kill zombie processes [LINK](https://www.geeksforgeeks.org/zombie-processes-prevention/)
+
+- Cannot stop for url http://www.makereadyweb.com/,  (pkill -9 chrome every 3 hours)
+
+
 More code is on the way

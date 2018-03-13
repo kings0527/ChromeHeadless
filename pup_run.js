@@ -44,19 +44,17 @@ async function run_single(myUrl){
 
     const browser = await puppeteer.launch({args: ['--no-sandbox']});
     //if you do not use this, error will happen on CentOS 7
-
     var page = null;
-
-    page = await browser.newPage();
-
-    var arrayOfStrings = String(myUrl).split('/');
-
-    let name = globalDir + arrayOfStrings[arrayOfStrings.length-1];
-
-    console.log("The store location is at " + name);
-
     try
     {
+        page = await browser.newPage();
+
+        var arrayOfStrings = String(myUrl).split('/');
+
+        let name = globalDir + arrayOfStrings[arrayOfStrings.length-1];
+
+        console.log("The store location is at " + name);
+
         await page.goto(myUrl,  { timeout: 5000 }); //5000 is 5000ms
 
         const url = await page.url();
@@ -90,7 +88,6 @@ async function run_single(myUrl){
         }
 
     await browser.close();
-
 };
 
 /*
@@ -105,7 +102,6 @@ async function run_multiple_urls(urlList){
   const browser = await puppeteer.launch({args: ['--no-sandbox']});
   //if you do not use this, error will happen on CentOS 7
 
-
   var arrayLength = urlList.length;
 
   for (var i = 0; i < arrayLength; i++) {
@@ -113,7 +109,7 @@ async function run_multiple_urls(urlList){
     //the i-th element
     myUrl = urlList[i];
 
-    //console.log(String(i) +'-th: ' + myUrl);
+    console.log("[TEST]Visiting  "+ beginId + ":" + myUrl);
 
     page = await browser.newPage();
     try {
@@ -148,12 +144,12 @@ async function run_multiple_urls(urlList){
             await page.screenshot({path: name + '.screen.png'});
 
             //console.log('[3] Screen was saved.');
-            console.log("Done on "+ myUrl);
+            console.log("[SUCC]Done on "+  beginId + ":" + myUrl);
         }
     catch (e)
         {
             //console.log(e);
-            console.log('Cannot go to for ' + myUrl + ', continue...');
+            console.log('[FAIL]Cannot go to for ' +  beginId + ":" + myUrl + ', continue...');
         }
     await page.close();
 
@@ -177,13 +173,20 @@ async function run_file_in_separate_fashion(beginFile)
     }
 
     urlList.sort();
-    console.log('Total length:' + String(urlList.length));
+    console.log('[STAT]Total length of ' + beginFile + '  is   ' + String(urlList.length));
     var length = urlList.length;
-    var interval = 20;
+    var interval = 10;
     for (var i = 0; i < length; i = i+interval)
     {
         var subArray = urlList.slice(i,i+interval)
-        await run_multiple_urls(subArray);
+        try
+        {
+            await run_multiple_urls(subArray);
+        }
+        catch (e)
+        {
+           console.log("[FXXK]Browser launch failed, lose 10 urls");
+        }
     }
 
     process.exit(0);
