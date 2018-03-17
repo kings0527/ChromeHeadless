@@ -41,6 +41,10 @@ function readSquatting(filename)
 };
 
 
+function readSubdomainSquatting()
+{
+
+}
 //var filepath = '/home/ketian/Desktop/squatting_domains/domain_collect/_home_datashare_dns_history_20170906_4chan.org.out'
 //filepath ='/home/ketian/Desktop/squatting_domains/domain_collect/_home_datashare_dns_history_20170906_bloomberg.com.out'
 //readSqautting(filepath);

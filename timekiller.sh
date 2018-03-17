@@ -10,4 +10,4 @@ pkill -9 chrome
 sleep $a
 done
 
-# run as ./timekiller.sh &
+#run as ./timekiller.sh &

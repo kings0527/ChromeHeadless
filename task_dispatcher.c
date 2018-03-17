@@ -14,10 +14,7 @@
 
 #define PROC_MAX 5
 //The maximum processes the machine can tolerate
-//5X Fast
-
-#define INTERVAL 5*60*60
-//2 hours
+//10X Fast
 
 //you can customize the work with any task.
 void work(int i)
