@@ -130,6 +130,8 @@ gcc task_dispatcher.c --std=c99
 
 nohup ./a.out 1 10 &
 
+#run subdomains
+nohup node subdomain_run.js --dir=fb/ > subdomain.out &
 
 pstree:
 a_cyclops.out─┬─a_cyclops.out───sh───node─┬─chrome─┬─chrome─┬─2*[chrome───14*[{chrome}]]
