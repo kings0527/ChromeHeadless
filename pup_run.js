@@ -162,6 +162,9 @@ async function run_multiple_urls(urlList){
 async function run_file_in_separate_fashion(beginFile)
 {
     var dp = require('./data_process');
+
+    var mobile = require('./mobile');
+
     var domain_structure_list = dp.readSquatting(beginFile);
     var urlList = new Array();
     for (i in domain_structure_list)
@@ -179,9 +182,12 @@ async function run_file_in_separate_fashion(beginFile)
     for (var i = 0; i < length; i = i+interval)
     {
         var subArray = urlList.slice(i,i+interval)
+        await mobile.run_mobile_multiple_urls(subArray, beginId, globalDir);
         try
         {
-            await run_multiple_urls(subArray);
+            //await run_multiple_urls(subArray);
+            await mobile.run_mobile_multiple_urls(subArray, beginId, globalDir);
+
         }
         catch (e)
         {
