@@ -79,7 +79,7 @@ async function run_mobile_multiple_urls(urlList, beginId, globalDir){
   for (var i = 0; i < arrayLength; i++) {
 
     //the i-th element
-    myUrl = urlList[i];
+    var myUrl = urlList[i];
 
     console.log("[TEST MOBILE]Visiting  "+ beginId + ":" + myUrl);
 
