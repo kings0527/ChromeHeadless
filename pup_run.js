@@ -10,29 +10,40 @@ const beginFile = argv.file;
 const beginId = (argv.id.toString() || '').toString();
 
 var outputDir = null;
+var mobileDir = null;
 
 if (beginId.length > 0)
-{  outputDir = argv.dir + beginId + '/'|| './' }
+{
+    outputDir = argv.dir + beginId + '/'|| './';
+    mobileDir = argv.dir + beginId + '_mobile/' || './';
+}
 else
-{  outputDir = argv.dir || './' }
+{
+    outputDir = argv.dir || './';
+    mobileDir = argv.dir + '_mobile' || './';
+}
 
 const globalDir = outputDir;
-console.log("globalDir is " + globalDir);
+const globalMobileDir = mobileDir;
 
+console.log("globalDir is " + globalDir);
+console.log("globalMobile Dir is" + globalMobileDir);
 
 function checkDirectorySync(directory) {
   try {
+
     fs.statSync(directory);
-    console.log("Existing "+ directory + ", no need to recreate");
+    console.log("Existing " + directory + ", no need to recreate");
     process.exit();
 
   } catch(e) {
     fs.mkdirSync(directory);
-    console.log("Create a directory as "+ directory);
+    console.log("Create a directory as " + directory);
   }
 }
 
 checkDirectorySync(globalDir);
+checkDirectorySync(globalMobileDir);
 
 //terminate the process in case some weird things happen
 process.on('unhandledRejection', up => { throw up })
@@ -178,16 +189,22 @@ async function run_file_in_separate_fashion(beginFile)
     urlList.sort();
     console.log('[STAT]Total length of ' + beginFile + '  is   ' + String(urlList.length));
     var length = urlList.length;
-    var interval = 10;
+    var interval = 5;
     for (var i = 0; i < length; i = i+interval)
     {
         var subArray = urlList.slice(i,i+interval)
-        await mobile.run_mobile_multiple_urls(subArray, beginId, globalDir);
         try
         {
-            //await run_multiple_urls(subArray);
-            await mobile.run_mobile_multiple_urls(subArray, beginId, globalDir);
+            await mobile.run_mobile_multiple_urls(subArray, beginId, globalMobileDir);
+        }
+        catch (e)
+        {
+           console.log("[FXXK MOBILE]Browser launch failed, lose 10 urls");
+        }
 
+        try
+        {
+            await run_multiple_urls(subArray);
         }
         catch (e)
         {

@@ -81,7 +81,7 @@ async function run_mobile_multiple_urls(urlList, beginId, globalDir){
     //the i-th element
     myUrl = urlList[i];
 
-    console.log("[TEST]Visiting  "+ beginId + ":" + myUrl);
+    console.log("[TEST MOBILE]Visiting  "+ beginId + ":" + myUrl);
 
     page = await browser.newPage();
 
@@ -118,12 +118,12 @@ async function run_mobile_multiple_urls(urlList, beginId, globalDir){
             await page.screenshot({path: name + '.screen.png'});
 
             //console.log('[3] Screen was saved.');
-            console.log("[SUCC]Done on "+  beginId + ":" + myUrl);
+            console.log("[SUCC MOBILE]Done on "+  beginId + ":" + myUrl);
         }
     catch (e)
         {
             //console.log(e);
-            console.log('[FAIL]Cannot go to for ' +  beginId + ":" + myUrl + ', continue...');
+            console.log('[FAIL MOBILE]Cannot go to for ' +  beginId + ":" + myUrl + ', continue...');
         }
 
     await page.close();
