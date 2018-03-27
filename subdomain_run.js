@@ -190,11 +190,10 @@ async function run_file_in_subdomain_fashion(filename, _idx, outputDir, output_m
     for (var i = 0; i < length; i = i+interval)
     {
         var subArray = urlList.slice(i,i+interval);
-        await run_mobile_multiple_urls(subArray, _idx, output_mobile);
         try
         {
-            //await run_multiple_urls(subArray, _idx, outputDir);
-            //await run_mobile_multiple_urls(subArray, _idx, output_mobile);
+            await run_multiple_urls(subArray, _idx, outputDir);
+            await run_mobile_multiple_urls(subArray, _idx, output_mobile);
         }
         catch (e)
         {
@@ -238,3 +237,4 @@ async function main() {
 main();
 
 //run_file_in_subdomain_fashion(_map);
+//node subdomain_run.js
