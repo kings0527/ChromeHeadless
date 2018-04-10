@@ -20,7 +20,7 @@ if (beginId.length > 0)
 else
 {
     outputDir = argv.dir || './';
-    mobileDir = argv.dir + '_mobile' || './';
+    mobileDir = argv.dir + '_mobile`' || './';
 }
 
 const globalDir = outputDir;
@@ -62,7 +62,7 @@ async function run_single(myUrl){
 
         var arrayOfStrings = String(myUrl).split('/');
 
-        let name = globalDir + arrayOfStrings[arrayOfStrings.length-1];
+        let name =  arrayOfStrings[arrayOfStrings.length-1];
 
         console.log("The store location is at " + name);
 

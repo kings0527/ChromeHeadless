@@ -7,6 +7,9 @@
 </p>
 A lightweight built-in for website profiling.
 
+
+** I am still ACTIVELY building and testing it, this is just my side crawling project
+
 ## Install
 
 Install chrome and check whether it is stable:
