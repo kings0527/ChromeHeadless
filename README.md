@@ -8,7 +8,13 @@
 A lightweight built-in for website profiling.
 
 
-** I am still ACTIVELY building and testing it, this is just my side crawling project
+**I am still ACTIVELY building and testing it, this is just my side crawling project for a specific task**
+
+- [x] web-version-based crawling -pup_run.js
+- [x] mobile-based-crawling -mobile.js
+- [x] distributed-crawling using shared memory counter -task_dispatch.c
+- [ ] add JS tracking
+- [ ] documentation
 
 ## Install
 
